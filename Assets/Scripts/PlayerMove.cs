@@ -13,6 +13,7 @@ public class PlayerMove : MonoBehaviour {
 
     //public float Speed;
     // Rigidbody Rig;
+    public Transform modeloVisual;
     public CharacterController controller;
     public Animator animator;
     public float speed = 12f;
@@ -22,7 +23,6 @@ public class PlayerMove : MonoBehaviour {
     void Start () {
         //  controller = GetComponent<CharacterController> ();
         //   Rig = GetComponent<Rigidbody> ();
-
         LoadFromJason ();
 
     }
@@ -34,14 +34,13 @@ public class PlayerMove : MonoBehaviour {
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move (move * speed * Time.deltaTime);
 
- 
-
-
-
-
         if (animator != null)
         {
-            animator.SetBool("Andando", z > 0.1f);
+            animator.SetBool ("Andando", z > 0.1f);
+        }
+        if (move.sqrMagnitude > 0.01f)
+        {
+            modeloVisual.rotation = Quaternion.LookRotation(move);
         }
 
         //  px = transform.position.x;
