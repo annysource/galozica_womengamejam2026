@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: 3b87dea0b5933784890d7a5956eb8d84
+timeCreated: 1511729393
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bryce1
+    100002: Google_Earth_Snapshot
+    100004: Mesh1
+    100006: Mesh2
+    100008: Mesh3
+    100010: //RootNode
+    100012: museu_naval3_1_1
+    400000: Bryce1
+    400002: Google_Earth_Snapshot
+    400004: Mesh1
+    400006: Mesh2
+    400008: Mesh3
+    400010: //RootNode
+    400012: museu_naval3_1_1
+    2300000: Mesh1
+    2300002: Mesh2
+    2300004: Mesh3
+    3300000: Mesh1
+    3300002: Mesh2
+    3300004: Mesh3
+    4300000: Mesh1
+    4300002: Mesh2
+    4300004: Mesh3
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Carpet_Plush_Charcoal
+    second: {fileID: 2100000, guid: beaad6751f1fd6646a0a72984a43d021, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_000
+    second: {fileID: 2100000, guid: bc6a6135f9d7d034db62da9ed8619ee6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontColor
+    second: {fileID: 2100000, guid: 8ea64f7fbf61c074aaf57e55ebafc6ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot1
+    second: {fileID: 2100000, guid: 12cb62e2a6183224dadfae32d822c974, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP1
+    second: {fileID: 2100000, guid: 819e5794c85a7494eb8c08df1e72dae1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP2
+    second: {fileID: 2100000, guid: f65b9934a9ca8c4419bb6a20dd633f65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP2_1
+    second: {fileID: 2100000, guid: 006ef6e89cada354b8e7c5559dfda440, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP2_2
+    second: {fileID: 2100000, guid: 29bb96687899ab4439b2db38e21278a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP2_3
+    second: {fileID: 2100000, guid: 7b1b5b13d6345c04385ee97fdef0a23a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP2_4
+    second: {fileID: 2100000, guid: 4843d702fbbf3cf47a9461590a95ebc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP2_5
+    second: {fileID: 2100000, guid: 3a9c012da8fbb374aa591701e4ffc795, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP2_6
+    second: {fileID: 2100000, guid: 79564af4436da8447ad6d67036110bca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP2_7
+    second: {fileID: 2100000, guid: dfcf346051409ee419e9851f26b53835, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP2_8
+    second: {fileID: 2100000, guid: a90fb909f99c28f4598eb0c420efe17c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3
+    second: {fileID: 2100000, guid: d6663fb38696f2c43bbee3f3516f9076, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_1
+    second: {fileID: 2100000, guid: 947afb930f0a2fd4789f444ae6b71342, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_10
+    second: {fileID: 2100000, guid: 55d357c5dfff6b34eac3c34cf2a239cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_11
+    second: {fileID: 2100000, guid: b00ad30767e87c14498de6df35c34f5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_12
+    second: {fileID: 2100000, guid: c22050b49112b004aa33393c13b6ea0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_14
+    second: {fileID: 2100000, guid: 7d994913edf9a4b47a4deba5d58b428d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_15
+    second: {fileID: 2100000, guid: 9dfc71b972bc62943b7be703b841ab85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_16
+    second: {fileID: 2100000, guid: 0486c4a7ea5b9fb4ab91d49fb6cf6e09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_17
+    second: {fileID: 2100000, guid: a91912fc13566be4b9f8c73c47490c2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_18
+    second: {fileID: 2100000, guid: 77d2a8b0bb6ca26408cd1121bdeb8af8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_19
+    second: {fileID: 2100000, guid: 99036afeb06362a489d27a068ea5ab5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_2
+    second: {fileID: 2100000, guid: 8254dc9ddfb2b0e489e44490ddbc3cea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_3
+    second: {fileID: 2100000, guid: dc28bbedb0bd942438d2386532a8b31a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_4
+    second: {fileID: 2100000, guid: ecbc4153b4d621d49ae7b24940ef53e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_5
+    second: {fileID: 2100000, guid: fca6c2fce189e5a43b5b0d97e64ef028, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_6
+    second: {fileID: 2100000, guid: dd572e4a0652a7049addf156bdd3a204, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_7
+    second: {fileID: 2100000, guid: 52d7fcff0672d134c9ac7edeb4c261af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_8
+    second: {fileID: 2100000, guid: 4020e11c4a8840a4e81f24cba4c3403a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP3_9
+    second: {fileID: 2100000, guid: c2aa1cf62e19d5841a5dfe7e8bad1229, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP4
+    second: {fileID: 2100000, guid: 171149b5c44ced14a91e4031f5aaee6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP4_1
+    second: {fileID: 2100000, guid: 6bcfa33897be55445a52b51e3e252207, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP4_2
+    second: {fileID: 2100000, guid: d550be25eb1ad12489dce0d8b8d2d590, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP4_3
+    second: {fileID: 2100000, guid: b9f9fb4e69288e64eab91f238637c3ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IMGP4_4
+    second: {fileID: 2100000, guid: 85a09a2a99ba44e44b2f3c0060d16857, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Beige_1
+    second: {fileID: 2100000, guid: cbe5b97676b979f4890eedff784424d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Black_
+    second: {fileID: 2100000, guid: efb57bc9b276d044582653347bb37663, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Brown_
+    second: {fileID: 2100000, guid: db4ab145037ff8f4ca8c1c49193f7c10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Charcoal_
+    second: {fileID: 2100000, guid: 3f3db6238e75fb24694ff6758830f87d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _DarkGoldenrod_
+    second: {fileID: 2100000, guid: 00c01c71fc758414ebd99ef4dd838b49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Gray6_
+    second: {fileID: 2100000, guid: 3d462a1199e5c424cb29b8dd00ff3b68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Redwood_
+    second: {fileID: 2100000, guid: f5bc52cf9b087a74d91aa2dc09d6331f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jean_blue
+    second: {fileID: 2100000, guid: 76c027a221a97a24f83c3446ba77de73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1
+    second: {fileID: 2100000, guid: 58cfedbb1703c2340a9f7e8c1d4c9a19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_1
+    second: {fileID: 2100000, guid: 4ede4459d6e65a04f9114899716a620e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_10
+    second: {fileID: 2100000, guid: 31cbe5d7b8e43b04fa8984ec28fc0d91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_11
+    second: {fileID: 2100000, guid: 946ea936755fe1e4db66b19bba959c16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_12
+    second: {fileID: 2100000, guid: d20e43e76f9089144a83303e2fe58e66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_13
+    second: {fileID: 2100000, guid: 2752492010092354d82e41f9f80bd33f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_14
+    second: {fileID: 2100000, guid: 00d84e10ab2e10b46b0fb464ece2d85b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_15
+    second: {fileID: 2100000, guid: 9fa4d4d946437344db1ac4b2013d8285, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_2
+    second: {fileID: 2100000, guid: 8b43eb172755e674d89ae52bb9a4156e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_3
+    second: {fileID: 2100000, guid: 4550ccb2d73dc4547ad6f3de1efc466a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_4
+    second: {fileID: 2100000, guid: 4eaa80dc8e5610446b74b8d5b95e89ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_5
+    second: {fileID: 2100000, guid: 0b57830f3179fa240b4fb3ca4b7448c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_6
+    second: {fileID: 2100000, guid: 75d7963db5068a744b0d6fc0cb7d6858, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_7
+    second: {fileID: 2100000, guid: cae642d09f41f1f42bd29b7fb48dfe14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_8
+    second: {fileID: 2100000, guid: 82e50a5b0a661b644959d8edcb84c09b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museude_cima1_9
+    second: {fileID: 2100000, guid: bffc39fb0138b5346bd839249dba1fc9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

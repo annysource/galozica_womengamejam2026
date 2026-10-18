@@ -1,0 +1,549 @@
+fileFormatVersion: 2
+guid: 71c3626ba7a5b9f4bb12331cce03238c
+timeCreated: 1511729484
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Google_Earth_Terrain
+    100002: Group1
+    100004: Group10
+    100006: Group11
+    100008: Group12
+    100010: Group13
+    100012: Group14
+    100014: Group15
+    100016: Group2
+    100018: Group3
+    100020: Group4
+    100022: Group5
+    100024: Group6
+    100026: Group7
+    100028: Group8
+    100030: Group9
+    100032: Mesh1
+    100034: Mesh10
+    100036: Mesh11
+    100038: Mesh12
+    100040: Mesh13
+    100042: Mesh14
+    100044: Mesh2
+    100046: Mesh3
+    100048: Mesh4
+    100050: Mesh5
+    100052: Mesh6
+    100054: Mesh7
+    100056: Mesh8
+    100058: Mesh9
+    100060: //RootNode
+    400000: Google_Earth_Terrain
+    400002: Group1
+    400004: Group10
+    400006: Group11
+    400008: Group12
+    400010: Group13
+    400012: Group14
+    400014: Group15
+    400016: Group2
+    400018: Group3
+    400020: Group4
+    400022: Group5
+    400024: Group6
+    400026: Group7
+    400028: Group8
+    400030: Group9
+    400032: Mesh1
+    400034: Mesh10
+    400036: Mesh11
+    400038: Mesh12
+    400040: Mesh13
+    400042: Mesh14
+    400044: Mesh2
+    400046: Mesh3
+    400048: Mesh4
+    400050: Mesh5
+    400052: Mesh6
+    400054: Mesh7
+    400056: Mesh8
+    400058: Mesh9
+    400060: //RootNode
+    2300000: Mesh1
+    2300002: Mesh10
+    2300004: Mesh11
+    2300006: Mesh12
+    2300008: Mesh13
+    2300010: Mesh14
+    2300012: Mesh2
+    2300014: Mesh3
+    2300016: Mesh4
+    2300018: Mesh5
+    2300020: Mesh6
+    2300022: Mesh7
+    2300024: Mesh8
+    2300026: Mesh9
+    3300000: Mesh1
+    3300002: Mesh10
+    3300004: Mesh11
+    3300006: Mesh12
+    3300008: Mesh13
+    3300010: Mesh14
+    3300012: Mesh2
+    3300014: Mesh3
+    3300016: Mesh4
+    3300018: Mesh5
+    3300020: Mesh6
+    3300022: Mesh7
+    3300024: Mesh8
+    3300026: Mesh9
+    4300000: Mesh1
+    4300002: Mesh2
+    4300004: Mesh3
+    4300006: Mesh4
+    4300008: Mesh5
+    4300010: Mesh6
+    4300012: Mesh7
+    4300014: Mesh8
+    4300016: Mesh9
+    4300018: Mesh10
+    4300020: Mesh11
+    4300022: Mesh12
+    4300024: Mesh13
+    4300026: Mesh14
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Figura1
+    second: {fileID: 2100000, guid: fa07e9026b8683a45bc6d0c656fa830b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontColor
+    second: {fileID: 2100000, guid: 8ea64f7fbf61c074aaf57e55ebafc6ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot
+    second: {fileID: 2100000, guid: d2f724330e7441d48b982716c03067d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot1
+    second: {fileID: 2100000, guid: 12cb62e2a6183224dadfae32d822c974, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot10
+    second: {fileID: 2100000, guid: b5873369eb7e71245ac33cc6c897debe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot11
+    second: {fileID: 2100000, guid: cdd742cb55308c74fa12949215bc553e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot12
+    second: {fileID: 2100000, guid: 07e66a3a2cc408d47bb5a465a4620ef9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot13
+    second: {fileID: 2100000, guid: b0139c03359df9144b23a93e92f31d1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot14
+    second: {fileID: 2100000, guid: 06923bed8a3eb2a4cbb55376146cd7bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot2
+    second: {fileID: 2100000, guid: 3b03b8623e4369544a8dab741fd2b353, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot3
+    second: {fileID: 2100000, guid: bd83e3648dc32b244974e71891e7525c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot4
+    second: {fileID: 2100000, guid: 713d23f19b11fa847906b956ccaec758, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot5
+    second: {fileID: 2100000, guid: 060bcb3d958a62745b6ca5ead754da90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot6
+    second: {fileID: 2100000, guid: 340a41372cba4644d8fd6d02820369c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot7
+    second: {fileID: 2100000, guid: 09f350b42df1555468cdeb85c9c9762c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot8
+    second: {fileID: 2100000, guid: 60490fdeae52a3246be0d03c77b658c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot9
+    second: {fileID: 2100000, guid: f529e5a5032ddae47aa5002afcfaa66e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot_1
+    second: {fileID: 2100000, guid: 97380af68a4ea9742a71c9df3c53ebaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot_2
+    second: {fileID: 2100000, guid: e21bf9a52a8101f4c8a4f217227d986a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RUA_8_1
+    second: {fileID: 2100000, guid: c3af1659d4b2b614ca008360f6a2357e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VISTA_10
+    second: {fileID: 2100000, guid: 28d8457b9ef29f3498a324ea2d9a274b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VISTA_1_1
+    second: {fileID: 2100000, guid: ba4b6dc5275742e49b9f63f7397223db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VISTA_4
+    second: {fileID: 2100000, guid: f4325db6a52e45d47906a11b4435ba31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cachorrete
+    second: {fileID: 2100000, guid: 1f4cd6f9cd8cc4845be32cb162e9a20d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cachorrete_1
+    second: {fileID: 2100000, guid: 09abc7dfccf8ae746bfcff152884683d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cachorrete_2
+    second: {fileID: 2100000, guid: 0c309ea4c0dc5704ca7b17247396c804, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carranca
+    second: {fileID: 2100000, guid: e1abab91a93c7844c97a2479f6460ddf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carranca_1
+    second: {fileID: 2100000, guid: ac36bdd80e9f1b24cbb4068bc2bcfbd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal
+    second: {fileID: 2100000, guid: f8997a96c99a62e4487741bb9c1b1389, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal1
+    second: {fileID: 2100000, guid: c08fed90bfef7784f986e534b5832b40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal10
+    second: {fileID: 2100000, guid: 9d549c73a7a8ff84fb4362df7eb32378, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal11
+    second: {fileID: 2100000, guid: 2e29ca30907360b45900b181c9ff7179, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal12
+    second: {fileID: 2100000, guid: e9ca99d6fabc5b84c8ad79360b83895e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal13
+    second: {fileID: 2100000, guid: 335acc864d9bf3f4dbd5e5cfb8514ee3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal14
+    second: {fileID: 2100000, guid: 1e113001ba08e4748a0e1687fbf948d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal15
+    second: {fileID: 2100000, guid: fb2c33889e763d64eb938423e4616e32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal16
+    second: {fileID: 2100000, guid: 8c04ef69486f7ba43975f99f667e46f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal17
+    second: {fileID: 2100000, guid: 2a0bcfd35cfcec749a31e74b5309031f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal18
+    second: {fileID: 2100000, guid: 42c00f01bb932284d8b0d6d0cdcb14e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal19
+    second: {fileID: 2100000, guid: 48d666f6b85050248b9559bc973dcd49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal2
+    second: {fileID: 2100000, guid: 831d2f93b78795243956d44c1c4847cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal20
+    second: {fileID: 2100000, guid: 756c06ba14de8e140b29198630bcee38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal21
+    second: {fileID: 2100000, guid: 8caabaf77e5176a4da41ae56ae9308c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal22
+    second: {fileID: 2100000, guid: dbe3733fbd2236b4fa21e687fdebfd42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal23
+    second: {fileID: 2100000, guid: 72b88e01d4505c7419793f8f7ebd348d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal24
+    second: {fileID: 2100000, guid: 750bf95e2ad786d46aa320004e91a8d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal25
+    second: {fileID: 2100000, guid: 0a111b7d464a02044913f84088020a3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal26
+    second: {fileID: 2100000, guid: d9d58d75e19c5394493f39bd9f230950, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal27
+    second: {fileID: 2100000, guid: 2a9ce0e6f1ac8d948a0f9ac7b74e1d4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal28
+    second: {fileID: 2100000, guid: aa50b7ca20fc61d4bb9409bb54ac1187, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal3
+    second: {fileID: 2100000, guid: b59d3454e0d5cc24abb71aa9e81e6037, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal4
+    second: {fileID: 2100000, guid: 36271405e7e255d429998bb4ebe79b9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal5
+    second: {fileID: 2100000, guid: ae8cdc8875c8fed4c8e658e27cc91a4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal6
+    second: {fileID: 2100000, guid: 524752c4b224a8b49ac637445e668063, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal7
+    second: {fileID: 2100000, guid: fe119703e714828419ddaf94d3efe3df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal8
+    second: {fileID: 2100000, guid: 6b23026adf17d1148a902580cc17f0ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal9
+    second: {fileID: 2100000, guid: d3e7279af54fabd4f966271ee2897777, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_1
+    second: {fileID: 2100000, guid: b138b80e5ec72bf40a6f3e6b3767b5dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_2
+    second: {fileID: 2100000, guid: a64954bd40c86e54785a81c55960b136, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_2_1
+    second: {fileID: 2100000, guid: 673d4e42788ac0f4aa79b6b9b8fb7011, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_2_2
+    second: {fileID: 2100000, guid: ffcef6f850104df4589698a2b179f777, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_2_3
+    second: {fileID: 2100000, guid: dab48b9df947cbd40968d6f51e2e9cd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_2_4
+    second: {fileID: 2100000, guid: 39734ffffae06fc4aa05d67334749c34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_2_5
+    second: {fileID: 2100000, guid: e5dff8a7eede71743a8b8bfcd794f426, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_2_6
+    second: {fileID: 2100000, guid: 776d0f5ebece14d44bad17d8add0514f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_2_7
+    second: {fileID: 2100000, guid: 255bbee0e0b48de4ea646cc1b299698c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_2_8
+    second: {fileID: 2100000, guid: 615a447cdbd29494187bbfb38d19e4b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_2_9
+    second: {fileID: 2100000, guid: 76f498f65f588bc4d82e7b7f4554fd29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_3
+    second: {fileID: 2100000, guid: b42c4e42dc654204494046b928636ab3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_4
+    second: {fileID: 2100000, guid: 589fed1af6cb85446a29f2c97661da20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_5
+    second: {fileID: 2100000, guid: 1c48bd5723af0144789f2b39ea4487ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vista_frontal_6
+    second: {fileID: 2100000, guid: e448015b2526f3549a694ed7125e07f0, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
