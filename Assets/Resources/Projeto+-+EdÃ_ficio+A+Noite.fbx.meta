@@ -1,136 +1,386 @@
 fileFormatVersion: 2
 guid: 217f70f6e5df3344cad044acb015f56d
-timeCreated: 1511729256
-licenseType: Free
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: Adornos_teto1
-    100002: Adornos_teto2
-    100004: Adornos_teto3
-    100006: Adornos_teto4
-    100008: Adornos_teto5
-    100010: Adornos_teto6
-    100012: barra1_1
-    100014: barra1_2
-    100016: barra1_3
-    100018: barra1_4
-    100020: barra1_5
-    100022: Detalhe1_1
-    100024: Detalhe1_2
-    100026: Detalhe1_3
-    100028: Detalhe1_4
-    100030: Google_Earth_Snapshot
-    100032: Group1
-    100034: Mesh1
-    100036: Mesh10
-    100038: Mesh11
-    100040: Mesh12
-    100042: Mesh13
-    100044: Mesh14
-    100046: Mesh15
-    100048: Mesh16
-    100050: Mesh17
-    100052: Mesh18
-    100054: Mesh2
-    100056: Mesh3
-    100058: Mesh4
-    100060: Mesh5
-    100062: Mesh6
-    100064: Mesh7
-    100066: Mesh8
-    100068: Mesh9
-    100070: //RootNode
-    400000: Adornos_teto1
-    400002: Adornos_teto2
-    400004: Adornos_teto3
-    400006: Adornos_teto4
-    400008: Adornos_teto5
-    400010: Adornos_teto6
-    400012: barra1_1
-    400014: barra1_2
-    400016: barra1_3
-    400018: barra1_4
-    400020: barra1_5
-    400022: Detalhe1_1
-    400024: Detalhe1_2
-    400026: Detalhe1_3
-    400028: Detalhe1_4
-    400030: Google_Earth_Snapshot
-    400032: Group1
-    400034: Mesh1
-    400036: Mesh10
-    400038: Mesh11
-    400040: Mesh12
-    400042: Mesh13
-    400044: Mesh14
-    400046: Mesh15
-    400048: Mesh16
-    400050: Mesh17
-    400052: Mesh18
-    400054: Mesh2
-    400056: Mesh3
-    400058: Mesh4
-    400060: Mesh5
-    400062: Mesh6
-    400064: Mesh7
-    400066: Mesh8
-    400068: Mesh9
-    400070: //RootNode
-    2300000: Mesh1
-    2300002: Mesh10
-    2300004: Mesh11
-    2300006: Mesh12
-    2300008: Mesh13
-    2300010: Mesh14
-    2300012: Mesh15
-    2300014: Mesh16
-    2300016: Mesh17
-    2300018: Mesh18
-    2300020: Mesh2
-    2300022: Mesh3
-    2300024: Mesh4
-    2300026: Mesh5
-    2300028: Mesh6
-    2300030: Mesh7
-    2300032: Mesh8
-    2300034: Mesh9
-    3300000: Mesh1
-    3300002: Mesh10
-    3300004: Mesh11
-    3300006: Mesh12
-    3300008: Mesh13
-    3300010: Mesh14
-    3300012: Mesh15
-    3300014: Mesh16
-    3300016: Mesh17
-    3300018: Mesh18
-    3300020: Mesh2
-    3300022: Mesh3
-    3300024: Mesh4
-    3300026: Mesh5
-    3300028: Mesh6
-    3300030: Mesh7
-    3300032: Mesh8
-    3300034: Mesh9
-    4300000: Mesh1
-    4300002: Mesh2
-    4300004: Mesh3
-    4300006: Mesh4
-    4300008: Mesh5
-    4300010: Mesh6
-    4300012: Mesh7
-    4300014: Mesh8
-    4300016: Mesh9
-    4300018: Mesh10
-    4300020: Mesh11
-    4300022: Mesh12
-    4300024: Mesh13
-    4300026: Mesh14
-    4300028: Mesh15
-    4300030: Mesh16
-    4300032: Mesh17
-    4300034: Mesh18
+  serializedVersion: 24200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Adornos_teto1
+  - first:
+      1: 100002
+    second: Adornos_teto2
+  - first:
+      1: 100004
+    second: Adornos_teto3
+  - first:
+      1: 100006
+    second: Adornos_teto4
+  - first:
+      1: 100008
+    second: Adornos_teto5
+  - first:
+      1: 100010
+    second: Adornos_teto6
+  - first:
+      1: 100012
+    second: barra1_1
+  - first:
+      1: 100014
+    second: barra1_2
+  - first:
+      1: 100016
+    second: barra1_3
+  - first:
+      1: 100018
+    second: barra1_4
+  - first:
+      1: 100020
+    second: barra1_5
+  - first:
+      1: 100022
+    second: Detalhe1_1
+  - first:
+      1: 100024
+    second: Detalhe1_2
+  - first:
+      1: 100026
+    second: Detalhe1_3
+  - first:
+      1: 100028
+    second: Detalhe1_4
+  - first:
+      1: 100030
+    second: Google_Earth_Snapshot
+  - first:
+      1: 100032
+    second: Group1
+  - first:
+      1: 100034
+    second: Mesh1
+  - first:
+      1: 100036
+    second: Mesh10
+  - first:
+      1: 100038
+    second: Mesh11
+  - first:
+      1: 100040
+    second: Mesh12
+  - first:
+      1: 100042
+    second: Mesh13
+  - first:
+      1: 100044
+    second: Mesh14
+  - first:
+      1: 100046
+    second: Mesh15
+  - first:
+      1: 100048
+    second: Mesh16
+  - first:
+      1: 100050
+    second: Mesh17
+  - first:
+      1: 100052
+    second: Mesh18
+  - first:
+      1: 100054
+    second: Mesh2
+  - first:
+      1: 100056
+    second: Mesh3
+  - first:
+      1: 100058
+    second: Mesh4
+  - first:
+      1: 100060
+    second: Mesh5
+  - first:
+      1: 100062
+    second: Mesh6
+  - first:
+      1: 100064
+    second: Mesh7
+  - first:
+      1: 100066
+    second: Mesh8
+  - first:
+      1: 100068
+    second: Mesh9
+  - first:
+      1: 100070
+    second: //RootNode
+  - first:
+      4: 400000
+    second: Adornos_teto1
+  - first:
+      4: 400002
+    second: Adornos_teto2
+  - first:
+      4: 400004
+    second: Adornos_teto3
+  - first:
+      4: 400006
+    second: Adornos_teto4
+  - first:
+      4: 400008
+    second: Adornos_teto5
+  - first:
+      4: 400010
+    second: Adornos_teto6
+  - first:
+      4: 400012
+    second: barra1_1
+  - first:
+      4: 400014
+    second: barra1_2
+  - first:
+      4: 400016
+    second: barra1_3
+  - first:
+      4: 400018
+    second: barra1_4
+  - first:
+      4: 400020
+    second: barra1_5
+  - first:
+      4: 400022
+    second: Detalhe1_1
+  - first:
+      4: 400024
+    second: Detalhe1_2
+  - first:
+      4: 400026
+    second: Detalhe1_3
+  - first:
+      4: 400028
+    second: Detalhe1_4
+  - first:
+      4: 400030
+    second: Google_Earth_Snapshot
+  - first:
+      4: 400032
+    second: Group1
+  - first:
+      4: 400034
+    second: Mesh1
+  - first:
+      4: 400036
+    second: Mesh10
+  - first:
+      4: 400038
+    second: Mesh11
+  - first:
+      4: 400040
+    second: Mesh12
+  - first:
+      4: 400042
+    second: Mesh13
+  - first:
+      4: 400044
+    second: Mesh14
+  - first:
+      4: 400046
+    second: Mesh15
+  - first:
+      4: 400048
+    second: Mesh16
+  - first:
+      4: 400050
+    second: Mesh17
+  - first:
+      4: 400052
+    second: Mesh18
+  - first:
+      4: 400054
+    second: Mesh2
+  - first:
+      4: 400056
+    second: Mesh3
+  - first:
+      4: 400058
+    second: Mesh4
+  - first:
+      4: 400060
+    second: Mesh5
+  - first:
+      4: 400062
+    second: Mesh6
+  - first:
+      4: 400064
+    second: Mesh7
+  - first:
+      4: 400066
+    second: Mesh8
+  - first:
+      4: 400068
+    second: Mesh9
+  - first:
+      4: 400070
+    second: //RootNode
+  - first:
+      23: 2300000
+    second: Mesh1
+  - first:
+      23: 2300002
+    second: Mesh10
+  - first:
+      23: 2300004
+    second: Mesh11
+  - first:
+      23: 2300006
+    second: Mesh12
+  - first:
+      23: 2300008
+    second: Mesh13
+  - first:
+      23: 2300010
+    second: Mesh14
+  - first:
+      23: 2300012
+    second: Mesh15
+  - first:
+      23: 2300014
+    second: Mesh16
+  - first:
+      23: 2300016
+    second: Mesh17
+  - first:
+      23: 2300018
+    second: Mesh18
+  - first:
+      23: 2300020
+    second: Mesh2
+  - first:
+      23: 2300022
+    second: Mesh3
+  - first:
+      23: 2300024
+    second: Mesh4
+  - first:
+      23: 2300026
+    second: Mesh5
+  - first:
+      23: 2300028
+    second: Mesh6
+  - first:
+      23: 2300030
+    second: Mesh7
+  - first:
+      23: 2300032
+    second: Mesh8
+  - first:
+      23: 2300034
+    second: Mesh9
+  - first:
+      33: 3300000
+    second: Mesh1
+  - first:
+      33: 3300002
+    second: Mesh10
+  - first:
+      33: 3300004
+    second: Mesh11
+  - first:
+      33: 3300006
+    second: Mesh12
+  - first:
+      33: 3300008
+    second: Mesh13
+  - first:
+      33: 3300010
+    second: Mesh14
+  - first:
+      33: 3300012
+    second: Mesh15
+  - first:
+      33: 3300014
+    second: Mesh16
+  - first:
+      33: 3300016
+    second: Mesh17
+  - first:
+      33: 3300018
+    second: Mesh18
+  - first:
+      33: 3300020
+    second: Mesh2
+  - first:
+      33: 3300022
+    second: Mesh3
+  - first:
+      33: 3300024
+    second: Mesh4
+  - first:
+      33: 3300026
+    second: Mesh5
+  - first:
+      33: 3300028
+    second: Mesh6
+  - first:
+      33: 3300030
+    second: Mesh7
+  - first:
+      33: 3300032
+    second: Mesh8
+  - first:
+      33: 3300034
+    second: Mesh9
+  - first:
+      43: 4300000
+    second: Mesh1
+  - first:
+      43: 4300002
+    second: Mesh2
+  - first:
+      43: 4300004
+    second: Mesh3
+  - first:
+      43: 4300006
+    second: Mesh4
+  - first:
+      43: 4300008
+    second: Mesh5
+  - first:
+      43: 4300010
+    second: Mesh6
+  - first:
+      43: 4300012
+    second: Mesh7
+  - first:
+      43: 4300014
+    second: Mesh8
+  - first:
+      43: 4300016
+    second: Mesh9
+  - first:
+      43: 4300018
+    second: Mesh10
+  - first:
+      43: 4300020
+    second: Mesh11
+  - first:
+      43: 4300022
+    second: Mesh12
+  - first:
+      43: 4300024
+    second: Mesh13
+  - first:
+      43: 4300026
+    second: Mesh14
+  - first:
+      43: 4300028
+    second: Mesh15
+  - first:
+      43: 4300030
+    second: Mesh16
+  - first:
+      43: 4300032
+    second: Mesh17
+  - first:
+      43: 4300034
+    second: Mesh18
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -188,7 +438,7 @@ ModelImporter:
       name: terrain
     second: {fileID: 2100000, guid: e3b8aa43d96cfad4286fb6446592167b, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -197,14 +447,14 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -219,30 +469,52 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -252,14 +524,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

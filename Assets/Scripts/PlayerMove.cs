@@ -40,6 +40,7 @@ public class PlayerMove : MonoBehaviour {
         }
         if (move.sqrMagnitude > 0.01f)
         {
+             animator.SetBool ("Andando", z > 0.1f);
             modeloVisual.rotation = Quaternion.LookRotation(move);
         }
 
