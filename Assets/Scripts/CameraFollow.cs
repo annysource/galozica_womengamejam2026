@@ -13,7 +13,7 @@ public class CameraFollow : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     [Range(0f, 0.5f)] private float bottomMargin = 0.15f;
 
-    private Vector3 groundOffset = new Vector3(0f, 2f, -10f);
+    private Vector3 groundOffset = new Vector3(-10f, 30f, -10f);
     private Vector3 platformOffset = new Vector3(0f, 0f, -10f);
 
     /// <summary>
