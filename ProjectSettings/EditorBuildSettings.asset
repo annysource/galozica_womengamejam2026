@@ -4,4 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/Resources/pra\xE7a Maua.unity"
+    guid: e1c52188e9d34c64d942472cbf9a8304
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

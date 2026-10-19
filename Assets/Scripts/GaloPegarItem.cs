@@ -65,16 +65,10 @@ public class GaloPegarItem : MonoBehaviour
     {
         itemCarregado = itemProximo;
         if (animator != null)
-        animator.SetTrigger("Ciscar");
+            animator.SetTrigger("Ciscar");
 
-        // A tag do objeto identifica o tipo.
-        tipoCarregado = itemCarregado.tag switch
-        {
-            "Baseado" => ItemType.Baseado,
-            "Semente" => ItemType.Semente,
-            "Galho" => ItemType.Galho,
-            _ => ItemType.Nenhum
-        };
+        tipoCarregado = ObterTipoItem(itemCarregado.transform);
+        Debug.Log($"Item pego: {itemCarregado.name}; tipo identificado: {tipoCarregado}.", itemCarregado);
 
         itemCarregado.isKinematic = true;
         itemCarregado.detectCollisions = false;
@@ -84,8 +78,40 @@ public class GaloPegarItem : MonoBehaviour
         itemCarregado.transform.localRotation = Quaternion.identity;
     }
 
+    ItemType ObterTipoItem(Transform raizItem)
+    {
+        ItemType tipo = TipoPelaTag(raizItem.tag);
+        if (tipo != ItemType.Nenhum)
+            return tipo;
+
+        foreach (Transform filho in raizItem.GetComponentsInChildren<Transform>(true))
+        {
+            if (filho == raizItem)
+                continue;
+
+            tipo = TipoPelaTag(filho.tag);
+            if (tipo != ItemType.Nenhum)
+                return tipo;
+        }
+
+        return ItemType.Nenhum;
+    }
+
+    ItemType TipoPelaTag(string tag)
+    {
+        return tag switch
+        {
+            "Baseado" => ItemType.Baseado,
+            "Semente" => ItemType.Semente,
+            "Galho" => ItemType.Galho,
+            _ => ItemType.Nenhum
+        };
+    }
+
     void Soltar()
     {
+        Debug.Log($"Item solto: {itemCarregado.name}; tipo antes de limpar: {tipoCarregado}.", itemCarregado);
+
         itemCarregado.transform.SetParent(null);
         itemCarregado.transform.position = pontoSoltar.position;
 
