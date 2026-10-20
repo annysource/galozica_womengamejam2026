@@ -1,0 +1,93 @@
+name: WebGL to itch.io
+
+on:
+  push:
+    branches:
+      - webgl
+
+permissions:
+  contents: read
+
+# Avoid overlapping builds and uploads for this branch.
+concurrency:
+  group: webgl-itch-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build WebGL
+    if: github.ref == 'refs/heads/webgl'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 90
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore Unity cache
+        uses: actions/cache@v4
+        with:
+          path: Library
+          key: ${{ runner.os }}-Unity-WebGL-${{ hashFiles('ProjectSettings/ProjectVersion.txt') }}-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            ${{ runner.os }}-Unity-WebGL-${{ hashFiles('ProjectSettings/ProjectVersion.txt') }}-
+
+      - name: Build with project's Unity version
+        uses: game-ci/unity-builder@v6
+        env:
+          # With no license file or serial, GameCI activates a Personal seat.
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          cliVersion: v0.1.72
+          unityVersion: auto
+          targetPlatform: WebGL
+          buildsPath: build
+          buildName: WebGL
+
+      - name: Check browser entry point
+        run: test -f build/WebGL/WebGL/index.html
+
+      - name: Save playable build
+        uses: actions/upload-artifact@v4
+        with:
+          name: galo-zica-webgl
+          path: build/WebGL/WebGL/
+          if-no-files-found: error
+          retention-days: 7
+
+  deploy:
+    name: Upload to itch.io
+    needs: build
+    if: github.ref == 'refs/heads/webgl'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    steps:
+      - name: Download playable build
+        uses: actions/download-artifact@v4
+        with:
+          name: galo-zica-webgl
+          path: webgl
+
+      - name: Install butler
+        shell: bash
+        run: |
+          curl --fail --location --retry 3 \
+            https://broth.itch.zone/butler/linux-amd64/LATEST/archive/default \
+            --output "$RUNNER_TEMP/butler.zip"
+          unzip -q "$RUNNER_TEMP/butler.zip" -d "$RUNNER_TEMP/butler"
+          chmod +x "$RUNNER_TEMP/butler/butler"
+          echo "$RUNNER_TEMP/butler" >> "$GITHUB_PATH"
+
+      - name: Publish WebGL channel
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_CREDENTIALS }}
+        shell: bash
+        run: |
+          if [[ -z "$BUTLER_API_KEY" ]]; then
+            echo "::error::Configure the BUTLER_CREDENTIALS repository secret."
+            exit 1
+          fi
+          test -f webgl/index.html
+          butler push webgl annynaweb/galo-zica:webgl --userversion "$GITHUB_SHA"
