@@ -9,12 +9,15 @@ public class CameraFollow : MonoBehaviour
 
 
     public Vector3 cameraOffset = new Vector3(-10f, 30f, -10f);
+    [SerializeField] private float mouseSensitivity = 5f;
     private float smoothTime = 0.25f;
     private Vector3 velocity = Vector3.zero;
     [Range(0f, 0.5f)] private float bottomMargin = 0.15f;
+    private Quaternion initialCameraRotation;
+    private float cameraYaw;
 
     private Vector3 groundOffset = new Vector3(-10f, 30f, -10f);
-    private Vector3 platformOffset = new Vector3(0f, 0f, -10f);
+    private Vector3 platformOffset = new Vector3(-10f, 30f, -10f);
 
     /// <summary>
     /// floorToPlatform is updated by PlayerTagUpdater attatched to the player object with a collision enter function.
@@ -25,9 +28,10 @@ public class CameraFollow : MonoBehaviour
     public bool platformToFloor = false;
     private Coroutine PTFHolder = null;
 
-
-
-    
+    private void Start()
+    {
+        initialCameraRotation = transform.rotation;
+    }
 
     public void LateUpdate()
     {
@@ -41,7 +45,11 @@ public class CameraFollow : MonoBehaviour
             platformToFloor = false;
             PTFHolder = StartCoroutine(platformToFloorRoutine());
         }
-        Vector3 targetPosition = cameraTarget.position + cameraOffset;
+        if (Input.GetMouseButton(1))
+            cameraYaw += Input.GetAxis("Mouse X") * mouseSensitivity;
+
+        Quaternion yawRotation = Quaternion.Euler(0f, cameraYaw, 0f);
+        Vector3 targetPosition = cameraTarget.position + yawRotation * cameraOffset;
         Vector3 nextPosition = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
         
         float maxCameraY = cameraTarget.position.y
@@ -54,6 +62,7 @@ public class CameraFollow : MonoBehaviour
         }
 
         transform.position = nextPosition;
+        transform.rotation = yawRotation * initialCameraRotation;
     }
 
     public IEnumerator floorToPlatformRoutine()

@@ -13,6 +13,7 @@ public class GaloPegarItem : MonoBehaviour
 
     private Rigidbody itemProximo;
     private Rigidbody itemCarregado;
+    private bool baseadoPegoPelaPrimeiraVez;
 
     public Animator animator;
 
@@ -68,6 +69,9 @@ public class GaloPegarItem : MonoBehaviour
             animator.SetTrigger("Ciscar");
 
         tipoCarregado = ObterTipoItem(itemCarregado.transform);
+        if (tipoCarregado == ItemType.Baseado)
+            baseadoPegoPelaPrimeiraVez = true;
+
         Debug.Log($"Item pego: {itemCarregado.name}; tipo identificado: {tipoCarregado}.", itemCarregado);
 
         itemCarregado.isKinematic = true;
@@ -127,7 +131,9 @@ public class GaloPegarItem : MonoBehaviour
     {
         string texto = itemCarregado != null
             ? "E — Soltar"
-            : itemProximo != null ? "E — Pegar" : "";
+            : itemProximo != null || !baseadoPegoPelaPrimeiraVez
+                ? "E — Pegar"
+                : "";
 
         if (texto == "") return;
 

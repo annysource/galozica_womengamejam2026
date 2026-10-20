@@ -28,39 +28,26 @@ public class PlayerMove : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
-        x = Input.GetAxis ("Horizontal");
-        z = Input.GetAxis ("Vertical");
-        Vector3 move = transform.right * x + transform.forward * z;
-        controller.Move (move * speed * Time.deltaTime);
+    void Update()
+{
+    x = Input.GetAxis("Horizontal");
+    z = Input.GetAxis("Vertical");
 
-        if (animator != null)
-        {
-            bool andando = x != 0f || z != 0f;
-            animator.SetBool("Andando", andando);
-        }
-        if (move.sqrMagnitude > 0.01f && animator != null)
-        {
-            animator.SetBool ("Andando", z > 0.1f);
-            modeloVisual.rotation = Quaternion.LookRotation(move);
-        }
+    Vector3 move = transform.right * x + transform.forward * z;
+    controller.Move(move * speed * Time.deltaTime);
 
-        //  px = transform.position.x;
-        //    py = transform.position.y;
-        //  pz = transform.position.z;
+    bool andando = move.sqrMagnitude > 0.01f;
 
-        // Vector3 Position = new Vector3 (Input.GetAxisRaw ("Horizontal"), 0, Input.GetAxisRaw ("Vertical"));
-        // Rig.velocity = Position * Speed;
-        /* float horizontalInput = Input.GetAxisRaw ("Horizontal");
-        float verticalInput = Input.GetAxisRaw ("Vertical");
-
-        direction = new Vector3 (horizontalInput, 0, verticalInput).normalized;
-
-         // velocity += acceleration * Time.deltaTime;
-         velocity = Vector3.SmoothDamp (velocity, direction * maxSpeed, ref currentVelocity, maxSpeed / acceleration);
-         transform.position += velocity * Time.deltaTime;*/
-
+    if (animator != null)
+    {
+        animator.SetBool("Andando", andando);
     }
+
+    if (andando && modeloVisual != null)
+    {
+        modeloVisual.rotation = Quaternion.LookRotation(move);
+    }
+}
     public void PassaPositionPlayer () {
         px = transform.position.x;
         pz = transform.position.z;

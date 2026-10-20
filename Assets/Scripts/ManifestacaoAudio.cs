@@ -4,7 +4,7 @@ public class ManifestacaoAudio : MonoBehaviour
 {
     public AudioSource audioManifestacao;
     public AudioSource audioVitoria;
-  
+    [SerializeField] private FluxoDeTelas fluxoDeTelas;
 
     private bool concluida;
 
@@ -19,6 +19,8 @@ public class ManifestacaoAudio : MonoBehaviour
         concluida = true;
 
         audioManifestacao.mute = true;
+        
+        fluxoDeTelas.Vencer();
         audioVitoria.Play();
         
        

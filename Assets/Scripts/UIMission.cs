@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class UIMission : MonoBehaviour
 {
+    [SerializeField] private FluxoDeTelas fluxoDeTelas;
+
     private bool exibirMensagem;
+    private bool vitoriaAcionada;
     private float mensagemAte;
 
     public void ExibirMissaoConcluida()
@@ -18,7 +21,13 @@ public class UIMission : MonoBehaviour
 
         GUI.Box(
             new Rect(Screen.width / 2f - 200, 20, 400, 70),
-            "Missão concluída!\nPróxima missão: encontre os pombos."
+            "Missão concluída!\n"
         );
+
+        if (!vitoriaAcionada)
+        {
+            fluxoDeTelas.Vencer();
+            vitoriaAcionada = true;
+        }
     }
 }
