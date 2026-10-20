@@ -433627,7 +433627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   camera: {fileID: 1757504115}
   cameraTarget: {fileID: 2050643273}
-  cameraOffset: {x: -10, y: 30, z: -10}
+  cameraOffset: {x: -1, y: 30, z: -10}
   floorToPlatform: 0
   platformToFloor: 1
 --- !u!1 &1759486519
