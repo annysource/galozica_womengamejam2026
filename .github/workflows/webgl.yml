@@ -34,12 +34,13 @@ jobs:
             ${{ runner.os }}-Unity-WebGL-${{ hashFiles('ProjectSettings/ProjectVersion.txt') }}-
 
       - name: Build with project's Unity version
-        uses: game-ci/unity-builder@v4
+        uses: game-ci/unity-builder@v6
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          # With no license file or serial, GameCI activates a Personal seat.
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
+          cliVersion: v0.1.72
           unityVersion: auto
           targetPlatform: WebGL
           buildsPath: build
