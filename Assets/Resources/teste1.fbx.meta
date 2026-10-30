@@ -1,0 +1,889 @@
+fileFormatVersion: 2
+guid: 7cd351e72ac20c146bdd791d560396ab
+timeCreated: 1511729524
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Google_Earth_Snapshot
+    100002: Mesh1
+    100004: Mesh2
+    100006: //RootNode
+    400000: Google_Earth_Snapshot
+    400002: Mesh1
+    400004: Mesh2
+    400006: //RootNode
+    2300000: Mesh1
+    2300002: Mesh2
+    3300000: Mesh1
+    3300002: Mesh2
+    4300000: Mesh1
+    4300002: Mesh2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_B19
+    second: {fileID: 2100000, guid: 297f1384c9dc5d841bfe3094d7141fe0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontColor
+    second: {fileID: 2100000, guid: 8ea64f7fbf61c074aaf57e55ebafc6ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot1
+    second: {fileID: 2100000, guid: 12cb62e2a6183224dadfae32d822c974, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1
+    second: {fileID: 2100000, guid: 43d8e3b3b027b52419fe0786ac711e46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_1
+    second: {fileID: 2100000, guid: 2e0796bbb63071b4d861138ed921d67c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_10
+    second: {fileID: 2100000, guid: 4d2a1ed9509627246a6f092a9834b5a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_11
+    second: {fileID: 2100000, guid: e21344bad1de6d34ea6ecdf58504b62b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_12
+    second: {fileID: 2100000, guid: a43f05b1e05bfa64f823306647713811, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_2
+    second: {fileID: 2100000, guid: e634b1e127b92754ea198296d12ca2db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_3
+    second: {fileID: 2100000, guid: 2d5868ab5567b9f45a8cd4735469998a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_4
+    second: {fileID: 2100000, guid: 9c06b53e9cfc4664db056f4db983b2ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_5
+    second: {fileID: 2100000, guid: 201d748ef8935dc44a88ab1813ede13a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_6
+    second: {fileID: 2100000, guid: c1c5238def566a842bfec3a79d77ac74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_7
+    second: {fileID: 2100000, guid: 2dbe52603fc898547ad5c2233397c0d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_8
+    second: {fileID: 2100000, guid: 092ad2dbfb8c97b44b18501902bd3153, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JANELA1_9
+    second: {fileID: 2100000, guid: 3f742f18439b48b46be94b4eab8b85d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lojas1
+    second: {fileID: 2100000, guid: b4cf5c83e4d9f8d40b98f9e816568cf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lojas10
+    second: {fileID: 2100000, guid: ac4a728c60e4f06489c02350d7d1dde4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lojas11
+    second: {fileID: 2100000, guid: 5e0ccfb40e3d8824c8992f8b94db8448, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lojas4
+    second: {fileID: 2100000, guid: e372e3e31269d5c4eb92ab8baad6bc95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lojas6
+    second: {fileID: 2100000, guid: b77da47594b06b64fb244a1cac57a484, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lojas7
+    second: {fileID: 2100000, guid: 1e3771a04b87fd644b52ee152d6562db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lojas8
+    second: {fileID: 2100000, guid: ac58da4c9bfe627488e528f3d2a63bbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lojas9
+    second: {fileID: 2100000, guid: c5a9cc991e3d5634b821b22deb30b7ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore
+    second: {fileID: 2100000, guid: 7858c542b011cd14282a851e24a8d7a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1
+    second: {fileID: 2100000, guid: 5de54d13cb9550a4cb9518bc92f55df0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore10
+    second: {fileID: 2100000, guid: 67d63277338c38446b7afd7d823343ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore11
+    second: {fileID: 2100000, guid: 1b34e5ecea03ad844b18597f73dba760, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore12
+    second: {fileID: 2100000, guid: 8c11522dadb04a3488e90d7360833fb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1213
+    second: {fileID: 2100000, guid: b8e86673216bbf04b9a0222598e8759b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore13
+    second: {fileID: 2100000, guid: 0b025d919ccc6fb45a25ec3d23ab70d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore14
+    second: {fileID: 2100000, guid: 1d6ecd7accddf7d42992e72c0cced5bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore15
+    second: {fileID: 2100000, guid: 05d029e92b0d7524db5e355f956fc4e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore16
+    second: {fileID: 2100000, guid: fd4863b719c2c5e4ea5bcdfbde4d8cef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore17
+    second: {fileID: 2100000, guid: 74dba924030fa994690bb3be6c0fa4a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore18
+    second: {fileID: 2100000, guid: c391c5b40d028ca49b16ffeef683ff04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore19
+    second: {fileID: 2100000, guid: 4ac0ecb082bfe024eae878a8eb8b7ecc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_1
+    second: {fileID: 2100000, guid: 28f73fdec0c9f584897dbe4dda2d1669, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_10
+    second: {fileID: 2100000, guid: d04b87d2011c74444bcc05a4ae9c71e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_11
+    second: {fileID: 2100000, guid: d0f9f9f372528ae49a0e1f968ade55e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_12
+    second: {fileID: 2100000, guid: 777e1fa1a3e4e2b40a077623d0f0bad6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_13
+    second: {fileID: 2100000, guid: 6dc32bfd30a1fd64eab1cc8a15928a98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_2
+    second: {fileID: 2100000, guid: 224023814fc0dd3458c0cdfd1ebb1fad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_3
+    second: {fileID: 2100000, guid: a8f1f639dccbc9b43ab0e56bb1995f8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_4
+    second: {fileID: 2100000, guid: 6448dbf110b4222498af92fa4161c2f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_5
+    second: {fileID: 2100000, guid: 9be2982e08431a345b908ba8edb9569d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_6
+    second: {fileID: 2100000, guid: b0ac0e1917455bb4daa62efa10ab67a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_7
+    second: {fileID: 2100000, guid: 78d487b9f16840c4bbcde0c5ce7e64d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_8
+    second: {fileID: 2100000, guid: e10ed82bacc62f7498ab8d9e0770061c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore1_9
+    second: {fileID: 2100000, guid: b613a65faf5659147bee05686e6b5689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2
+    second: {fileID: 2100000, guid: 8f415376d10da4149b3a96d5cbf1a531, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore20
+    second: {fileID: 2100000, guid: 49e59c5fe3684114ca522a63f3599dc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore21
+    second: {fileID: 2100000, guid: 1ca21b31c776fda46a09e4d97bf44c26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore22
+    second: {fileID: 2100000, guid: 4a639ef1294026a4aaaa85aceacc3eca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore23
+    second: {fileID: 2100000, guid: 4dd927d0742ec2b4ea7759725206afc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2324
+    second: {fileID: 2100000, guid: c55c736fa2d7f1f4ead578f3067ea51d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore24
+    second: {fileID: 2100000, guid: a5f5b46172478fd478505a032ce2a7c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_1
+    second: {fileID: 2100000, guid: 989f6678c0de8fc4c8020f1309bad7bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_10
+    second: {fileID: 2100000, guid: dca67069cbf12044fa3f17b9e0e2b8e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_11
+    second: {fileID: 2100000, guid: 4916dbe49b2036f47824cd519ee1cf2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_12
+    second: {fileID: 2100000, guid: 15e61fa6f3711164fa3e57a5acc27994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_13
+    second: {fileID: 2100000, guid: c97d648fcef6c574fa3f691e55bd7e28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_14
+    second: {fileID: 2100000, guid: e9d0825e4d8144040b2580a11eb11f16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_15
+    second: {fileID: 2100000, guid: 1a19faacc7c5b9a49bdc1b0cf02faa0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_16
+    second: {fileID: 2100000, guid: 9a77f7d0318ebba429c3cf58763403eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_17
+    second: {fileID: 2100000, guid: 2718dbd7ad4e38c4dbd98627bc9625c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_18
+    second: {fileID: 2100000, guid: ccf3a9021da5e3a499d86c7ef3ece922, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_19
+    second: {fileID: 2100000, guid: 3fbb59c0b84edaa4cb1675138c34939b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_2
+    second: {fileID: 2100000, guid: a6c3a1e8e55448a4697110c09667fd0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_20
+    second: {fileID: 2100000, guid: 41d14957ecbd0b4489358eba68542a15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_21
+    second: {fileID: 2100000, guid: 66dffa1ecc06beb4d97cd7a7b8a2f4b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_22
+    second: {fileID: 2100000, guid: 00a6f18d7508d314a89eadc77571382b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_23
+    second: {fileID: 2100000, guid: 9d1fb0109f2607d47ada11c2cfd5e909, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_24
+    second: {fileID: 2100000, guid: 50902a5eaa465154e8f9aacd564f339e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_25
+    second: {fileID: 2100000, guid: fa60135823a2b7f49851a3bc330b00df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_26
+    second: {fileID: 2100000, guid: c4869c8e1f0c30c4c8290ad2a3e2adc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_27
+    second: {fileID: 2100000, guid: 1c1f3d5e3ce0054468a9849fd9811cab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_28
+    second: {fileID: 2100000, guid: 92ee481c0f36a514184815766dbfacc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_29
+    second: {fileID: 2100000, guid: caa46e0dc12255746819d93f8ae99a8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_3
+    second: {fileID: 2100000, guid: b2e911152550bd54f92b451e3c73a8c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_30
+    second: {fileID: 2100000, guid: 021079e82fdde444eaf5be347aa3dc6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_31
+    second: {fileID: 2100000, guid: 6097ac4ae2d17544594f506031bbab83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_32
+    second: {fileID: 2100000, guid: ab6406a53cc64674b9fc08cd371500c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_33
+    second: {fileID: 2100000, guid: e6ff32c308a0d53428ff6bb683cdd68e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_34
+    second: {fileID: 2100000, guid: 3263471c9c5b4144fbf0f30f7bc9e81d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_35
+    second: {fileID: 2100000, guid: c5a148aef7a2ed6409dabd38802b1841, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_36
+    second: {fileID: 2100000, guid: 32cb643218d9c444f9f933be3eeb9512, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_37
+    second: {fileID: 2100000, guid: 1aa071e5eaff37645b9ab2f283005e42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_38
+    second: {fileID: 2100000, guid: eb36b6d5b72935548a7ed7f636f1941b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_4
+    second: {fileID: 2100000, guid: e528a1e42a882bc489092242a08ccaf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_5
+    second: {fileID: 2100000, guid: cc28484e9c48418428e57ad88fa74c31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_6
+    second: {fileID: 2100000, guid: aa7e5f12097b7f44b93a79dbfd0c3aff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_7
+    second: {fileID: 2100000, guid: 64a6a553bf12e4a4893096b30b024167, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_8
+    second: {fileID: 2100000, guid: bd70c0b26be2f87429024b2fd4c8be71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore2_9
+    second: {fileID: 2100000, guid: 7bb2cc0f3b4150b4f9c1047713b02c0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore3
+    second: {fileID: 2100000, guid: 591ee85ce24b44c42888fcad0b26b3e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore3_1
+    second: {fileID: 2100000, guid: 6dae80a2e98130b458b5a6bc58091571, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore3_2
+    second: {fileID: 2100000, guid: 4b94db863345d614595552c3ae4ec952, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore3_3
+    second: {fileID: 2100000, guid: 4111d2f655d11b441b006aef2cd71f5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore3_4
+    second: {fileID: 2100000, guid: f95a0d0975e7f7d42b38129c57c85a6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore3_5
+    second: {fileID: 2100000, guid: c938ddbace98a354ba359e1a0533798f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4
+    second: {fileID: 2100000, guid: 09deffd7e531f4748a61fc509bfac48d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore45
+    second: {fileID: 2100000, guid: b21bb0edd08890242a1eef2e3f3ac57a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_1
+    second: {fileID: 2100000, guid: 9607903328c3cee40964cafebfedc4b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_10
+    second: {fileID: 2100000, guid: 68eb0e9655ea35a42a5f42d5c4a285d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_11
+    second: {fileID: 2100000, guid: fba38fb5a9f7d0148aa69b21ab6d1618, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_12
+    second: {fileID: 2100000, guid: fc5291eba98f2e948896d903aedecfb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_13
+    second: {fileID: 2100000, guid: 60d69243fef57c94f9db3acbd31b43f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_14
+    second: {fileID: 2100000, guid: 86161b4c37d998e4ba4af552552656b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_15
+    second: {fileID: 2100000, guid: 1ad121256236d5a41bb111bdc71d40d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_16
+    second: {fileID: 2100000, guid: 895d7920acb826245a569a00791ff832, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_17
+    second: {fileID: 2100000, guid: fbd694df251bc7a4589be110a1d81ee7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_2
+    second: {fileID: 2100000, guid: b740ce7f7102d104b8b8873b92fa17fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_3
+    second: {fileID: 2100000, guid: b48332581ff0fdc46bd9817cbd3f8329, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_4
+    second: {fileID: 2100000, guid: 20f8479563d9fbe45b180c4db4853f72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_5
+    second: {fileID: 2100000, guid: 7dffbd4b1551ba347b127c22854338fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_6
+    second: {fileID: 2100000, guid: cc228198605d89c4183a7660102a86ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_7
+    second: {fileID: 2100000, guid: f72803d7b81187747be93a9eb5833e09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_8
+    second: {fileID: 2100000, guid: a953c1db2edee934a840c3a21bad9347, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore4_9
+    second: {fileID: 2100000, guid: 152fdd00cd206574e9270314372d1bef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5
+    second: {fileID: 2100000, guid: 6deeca52efaf4504fb567a165d61b83e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore56
+    second: {fileID: 2100000, guid: b18e2c53502958d4bac11f904a10dea5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_1
+    second: {fileID: 2100000, guid: 5cab4aeb80ac02448bfacc437eefae02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_10
+    second: {fileID: 2100000, guid: 99bc13d74422a5640866ece6ab3ca8c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_11
+    second: {fileID: 2100000, guid: 131b75a1613e2bf47b60ca1a4effce2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_12
+    second: {fileID: 2100000, guid: 915c6cea197b6e74d9d238e6ec718488, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_13
+    second: {fileID: 2100000, guid: cb26a544b317e074980369d401f0d500, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_14
+    second: {fileID: 2100000, guid: 9918c70c028aeca49b850f042be1df1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_15
+    second: {fileID: 2100000, guid: a8c85ddf20dc2cf49b399377288c94bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_16
+    second: {fileID: 2100000, guid: bd54e85f08ae6484db89ab97d00d315b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_17
+    second: {fileID: 2100000, guid: bd6070daab8d49844884789b44fc620c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_18
+    second: {fileID: 2100000, guid: 74868c3c0cb7fbb478e159f9f2ca06fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_19
+    second: {fileID: 2100000, guid: 8f0f6e7d4dcac1a4283acdd1087fcc47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_2
+    second: {fileID: 2100000, guid: e8ec4b86a05519842bbea3b418e5d3ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_20
+    second: {fileID: 2100000, guid: 6e6125bd027c63948a7f424354dbc3ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_21
+    second: {fileID: 2100000, guid: f03da1eeec0e4824d93bef1b3e5c1e1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_22
+    second: {fileID: 2100000, guid: 41cdd31762b119247af89b19296aff1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_23
+    second: {fileID: 2100000, guid: b9d560c1a31e8d24a90b15d6070b54d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_24
+    second: {fileID: 2100000, guid: 310e993bd845b814ab65f91664131199, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_25
+    second: {fileID: 2100000, guid: 11539566efe70e4458eb764d1dffbc43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_26
+    second: {fileID: 2100000, guid: ebdd457429453604198e1a8d6634f151, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_27
+    second: {fileID: 2100000, guid: f7addc03db166974d81096b9321a7481, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_28
+    second: {fileID: 2100000, guid: fd6709795a9db734e8caa939a4b2702d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_29
+    second: {fileID: 2100000, guid: 990ef9145a44d574aa80f068c4681143, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_3
+    second: {fileID: 2100000, guid: 3643b7f2e8cf4b44ab63e8670188002a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_30
+    second: {fileID: 2100000, guid: 6864f51830be5624da871e485f667935, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_31
+    second: {fileID: 2100000, guid: 100f29a101163ab43ada020ad128d140, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_32
+    second: {fileID: 2100000, guid: 330de010c97fce942b48a5e45213848b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_4
+    second: {fileID: 2100000, guid: c3eead7f48fb1e74083f19499821670f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_5
+    second: {fileID: 2100000, guid: 38950b6cc9aaabf44b119aceb05a49cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_6
+    second: {fileID: 2100000, guid: bb7efb564437ccb4490541d2883c5c7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_7
+    second: {fileID: 2100000, guid: 35bbd8553f78e9c4ea2bbc9309866afd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_8
+    second: {fileID: 2100000, guid: 9b8a66e8c6859874dbd5f2df110c8c45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore5_9
+    second: {fileID: 2100000, guid: e1e27a5f6abc069449563b4e3970aaf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore6
+    second: {fileID: 2100000, guid: 122239a804fc7c34f98b9e1234f890cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore7
+    second: {fileID: 2100000, guid: 33898031389d7a1479fc0debdf2ed0bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore8
+    second: {fileID: 2100000, guid: acbf8b0f0512a9d42affde6b5722a9b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marmore9
+    second: {fileID: 2100000, guid: f1bf6e5f214733846af4778ab7bd6912, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

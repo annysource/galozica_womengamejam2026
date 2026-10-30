@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 7b2b2a6eb45d485439bc9547e0e02db0
+timeCreated: 1511759023
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Line001
+    100004: Mesh369
+    100006: Mesh370
+    400000: //RootNode
+    400002: Line001
+    400004: Mesh369
+    400006: Mesh370
+    2300000: Line001
+    2300002: Mesh369
+    2300004: Mesh370
+    3300000: Line001
+    3300002: Mesh369
+    3300004: Mesh370
+    4300000: Line001
+    4300002: Mesh369
+    4300004: Mesh370
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_003
+    second: {fileID: 2100000, guid: 3bab11438dd7c7f4fab6879fde7d8d59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete_Scored_Jointless
+    second: {fileID: 2100000, guid: d6430c12a3c39b941baedd97e4af9d97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontColor
+    second: {fileID: 2100000, guid: 8ea64f7fbf61c074aaf57e55ebafc6ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pedestal_texture1
+    second: {fileID: 2100000, guid: 80d08f904e5e10641968a3797dbbb687, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture1_1
+    second: {fileID: 2100000, guid: 56f4f6c271b90c24cafba6ad7bf62eb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture1_2
+    second: {fileID: 2100000, guid: 962e17ebbac342747bbf1e34b16c954a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2
+    second: {fileID: 2100000, guid: e0c9eb0af7f0d604c882856699cf7611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: back_texture
+    second: {fileID: 2100000, guid: 868dd9f1c3ba56a44b6a1f2c2553dca9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balustrade
+    second: {fileID: 2100000, guid: c906b6a966213b84d99d43bacf16363c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balustrade3
+    second: {fileID: 2100000, guid: f5d42581e6c46e74c888eda2f710ac45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balustrade4
+    second: {fileID: 2100000, guid: 4b7203282afbd4a4ea8a0f41eaaa9f74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balustrade_top
+    second: {fileID: 2100000, guid: a645602a821813949ace55820c4df3a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balustrade_top12
+    second: {fileID: 2100000, guid: 0d5a5499c38b3a8458760e2d7b7476c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bbalustrade_sloped
+    second: {fileID: 2100000, guid: ef50b377d4110b741b95008d7bdd1d2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: canvas_awning
+    second: {fileID: 2100000, guid: fa6415195afcbc64788501f27647a1c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: canvas_scallop_edge
+    second: {fileID: 2100000, guid: c6837c2de53633f4abe47be536dbfcd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carpark_building_front
+    second: {fileID: 2100000, guid: 20711eb1c9569c845ac839e7a695a224, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carpark_lower
+    second: {fileID: 2100000, guid: 5794f28c24fa64a49b1ebb691c7e6b54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carpark_railing
+    second: {fileID: 2100000, guid: c275a99c97c42d84f9405d0fb448bd62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carpark_wall
+    second: {fileID: 2100000, guid: 1454dcd22469f8e4ab13b6ea07f0c9fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cement
+    second: {fileID: 2100000, guid: d668d9fdd4dd32b4986b4119ceacc325, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete
+    second: {fileID: 2100000, guid: 01f1570e8048fc94a90982da9604e8dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_cross_tiles
+    second: {fileID: 2100000, guid: ec68672f27dc2014d9df1daa129e4a48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_cross_tiles1
+    second: {fileID: 2100000, guid: 7e0c35ea4ff07194083c3a71b2cd0b0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_tread
+    second: {fileID: 2100000, guid: ecd1755e867d5bd4f84d623025653e97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: electricity_box
+    second: {fileID: 2100000, guid: 49a47f86efc2f0b428d307b838e4692d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: face
+    second: {fileID: 2100000, guid: 521f4d99aaec56a4383f7aeb113c54c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: front_texture
+    second: {fileID: 2100000, guid: b4b604b1db804b7438a7c93380805ad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_screen_fence1
+    second: {fileID: 2100000, guid: 3d77eadf5b6144e4bb8f41bc6139ffbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_screen_fence1_1
+    second: {fileID: 2100000, guid: 238290fc9dd976a459c6c06014d675c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_screen_fence1_2
+    second: {fileID: 2100000, guid: 6d69655c089aef940a6f698c575ca1bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_screen_fence1_3
+    second: {fileID: 2100000, guid: be392810270f8b94088ce2f8c6fd0fb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_screen_fence1_4
+    second: {fileID: 2100000, guid: 6dcc37e8501ee094ebbc27d958682718, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_screen_fence1_5
+    second: {fileID: 2100000, guid: 6a1ab540b17a6db4f943c362f929c632, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_screen_fence1_6
+    second: {fileID: 2100000, guid: 1a84651c91305314ba080665a58353be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_screen_fence1_7
+    second: {fileID: 2100000, guid: dfbe3445e12b8384d93de3ae7cbd3b20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_texture
+    second: {fileID: 2100000, guid: 5fa8518b64586ab449b34040f432b8dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_texture3
+    second: {fileID: 2100000, guid: dbcb343591d9b5541bdb134b618a2d01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_texture_straight
+    second: {fileID: 2100000, guid: 18c4a7373f1a8714ab6b5f811686b0ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair_rear
+    second: {fileID: 2100000, guid: 550e82adff14d984e8f53260f1666764, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head_right_texture
+    second: {fileID: 2100000, guid: 3d0cd89e0b12ea74699638468c50ae10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lift_tower
+    second: {fileID: 2100000, guid: 71a4584aff89f0049b0679e9d2e2af3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lift_tower1
+    second: {fileID: 2100000, guid: d5f0a04bd9b216042a8d37952a8a68c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lift_tower_1
+    second: {fileID: 2100000, guid: 0e3fc78a898efeb4b89fdbf9cb04873f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lift_tower_1_1
+    second: {fileID: 2100000, guid: 4ecee6dff7e1c7e49b868fa4833fabf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lift_tower_steel1
+    second: {fileID: 2100000, guid: 842f0bdc31860964a95ffe2ec2861cfe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_tiles1
+    second: {fileID: 2100000, guid: 4ec92ad1a695777419e3c556582a99e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lights_building
+    second: {fileID: 2100000, guid: b2ca917596b161b4fa5886c4596200ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lower_cafe_front
+    second: {fileID: 2100000, guid: f39b17a3d4e120548afc67c8964538d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lower_cafe_railing
+    second: {fileID: 2100000, guid: b2061df6db8f46348a2c6fb8926ac9b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lower_stairs_building_wall
+    second: {fileID: 2100000, guid: bc066be7c17927f40926556cb34a3988, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lower_stairs_building_wall1
+    second: {fileID: 2100000, guid: 094f6db29b2c55845a46455dbbd5e05f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lower_stairs_railing1
+    second: {fileID: 2100000, guid: bd92c7419dfb3c4419f9e34ba524015a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: b54af6f163d2f794ab359b0352b3faec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_roof
+    second: {fileID: 2100000, guid: 63df450214620434cb8e332d10ad3f58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plan_view
+    second: {fileID: 2100000, guid: 438c4d6e8a5e5c14d89820d71468211c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plan_view_modified
+    second: {fileID: 2100000, guid: b3b32c08297eb464db2bc91d3c6bbcd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: platform_edge
+    second: {fileID: 2100000, guid: c9e8a927340a19146b6033d223626a48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: platform_west_wall
+    second: {fileID: 2100000, guid: c309ece7b70e2df46996be11402b2968, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: railway_curve1
+    second: {fileID: 2100000, guid: b3ac96fbf007233479d64419cb759c62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: railway_curve2
+    second: {fileID: 2100000, guid: 0e2cf2dd0e537fd4da3756b774577c72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: railway_straight
+    second: {fileID: 2100000, guid: 243ed46fb4bbb79419df1d848ad7ec41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rear_doors1
+    second: {fileID: 2100000, guid: a5aa426199d0cac45b0bbadae544bd86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roller_shutter
+    second: {fileID: 2100000, guid: 235f5b01a73b78e4b9ead1805e8c5359, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roller_shutter1
+    second: {fileID: 2100000, guid: fabe34481b784f342919bd7f115050bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roller_shutter2
+    second: {fileID: 2100000, guid: 894f6994fb06fd94ab985dba14a8ed0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stairs_texture
+    second: {fileID: 2100000, guid: feeaf942d50174942b359ee75472aebc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stairs_wall_sloping
+    second: {fileID: 2100000, guid: f3ed2838f2960784e89b84adf8a5de8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stairs_wall_sloping1
+    second: {fileID: 2100000, guid: 18365e06e96c6f14d9ed15a104fdd122, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: station_building1_front
+    second: {fileID: 2100000, guid: 9cc7a30c8b5a157499e7f4288dcf35bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: station_building_brickwork
+    second: {fileID: 2100000, guid: 68a2bf545996ff347ab376600e2a3e8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_wall
+    second: {fileID: 2100000, guid: 582e0d90c5503ef499f9f605ac5907f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tiles_texture
+    second: {fileID: 2100000, guid: 6a502c9b9c45ec54c90045300593ebc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tiles_texture1
+    second: {fileID: 2100000, guid: b1fc9514ae9d1d148aa72aa6cc48fa1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tiles_texture2
+    second: {fileID: 2100000, guid: 36d880480386c0a48b288057626c4db4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tiles_texture3
+    second: {fileID: 2100000, guid: ed3d6f7665810b147be43317a3adaff3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tiles_texture4
+    second: {fileID: 2100000, guid: e199ce38f64163743be38add5617aeeb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tiles_texture5
+    second: {fileID: 2100000, guid: c301b6257d293f2479ee7c0c0dac4ee3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: upper_cafe_railing
+    second: {fileID: 2100000, guid: b73bc2aaced00c9458b9b8f8fae31e4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: walkway_roof
+    second: {fileID: 2100000, guid: 4330d507c9e674b4eb85752a750afa7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white_wall
+    second: {fileID: 2100000, guid: 4bb8f55377de380479b19a1b7af148a9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

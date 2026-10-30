@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: 7478f58e8c55ad646a9f3da3191724fc
+timeCreated: 1511729485
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Google_Earth_Terrain
+    100004: Google_Earth_Terrain1
+    100006: Mesh1
+    100008: Mesh2
+    100010: Mesh3
+    400000: //RootNode
+    400002: Google_Earth_Terrain
+    400004: Google_Earth_Terrain1
+    400006: Mesh1
+    400008: Mesh2
+    400010: Mesh3
+    2300000: Mesh1
+    2300002: Mesh2
+    2300004: Mesh3
+    3300000: Mesh1
+    3300002: Mesh2
+    3300004: Mesh3
+    4300000: Mesh1
+    4300002: Mesh2
+    4300004: Mesh3
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontColor
+    second: {fileID: 2100000, guid: 8ea64f7fbf61c074aaf57e55ebafc6ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot
+    second: {fileID: 2100000, guid: d2f724330e7441d48b982716c03067d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot1
+    second: {fileID: 2100000, guid: 12cb62e2a6183224dadfae32d822c974, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Google_Earth_Snapshot_1
+    second: {fileID: 2100000, guid: 97380af68a4ea9742a71c9df3c53ebaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture
+    second: {fileID: 2100000, guid: 7ff4edec5e6113b49a4dc7b2a4bda5b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture1
+    second: {fileID: 2100000, guid: 5ff9ab6fb01650e488ff970a33052874, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture1_1
+    second: {fileID: 2100000, guid: 56f4f6c271b90c24cafba6ad7bf62eb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2
+    second: {fileID: 2100000, guid: e0c9eb0af7f0d604c882856699cf7611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture23
+    second: {fileID: 2100000, guid: a77a9fd35514a7f4782fd72ea901a299, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_1
+    second: {fileID: 2100000, guid: 24b55e97d16f962489e2de3fcc29e4a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_10
+    second: {fileID: 2100000, guid: 65ca5ba4f9ffc6a45a1e10308c947dcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_11
+    second: {fileID: 2100000, guid: 1455be54c0365ac4d8b88184854fb6a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_12
+    second: {fileID: 2100000, guid: 46483a2f003846e46b5035c760c1ce8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_13
+    second: {fileID: 2100000, guid: dc9e764bcdf9ce5419e9c9ff95236c59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_14
+    second: {fileID: 2100000, guid: 2a2349dd985c16a45b3cf43c7bd68b32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_15
+    second: {fileID: 2100000, guid: 2149c04e043300946a278d05965258bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_16
+    second: {fileID: 2100000, guid: e97ca65f3993d0e4e8d119580f3ae794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_17
+    second: {fileID: 2100000, guid: 51e6ff476787f144491907794f47d1fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_18
+    second: {fileID: 2100000, guid: 0d65eeb0dfe0202419621e1f155e9769, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_19
+    second: {fileID: 2100000, guid: c308737319ffa1d4283c9c976d8e6f52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_2
+    second: {fileID: 2100000, guid: 23eb066ea80c1f44690aa81d53a00e01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_3
+    second: {fileID: 2100000, guid: 8b978bc5155573340a6f54ab63965e5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_4
+    second: {fileID: 2100000, guid: bac0706425e731841ac574902107cd36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_5
+    second: {fileID: 2100000, guid: 16bf5f0daa136d34aa1df6d8ebd44d39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_6
+    second: {fileID: 2100000, guid: 4a7665b07ebffb64aafff61e7cc8a0cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_7
+    second: {fileID: 2100000, guid: da80939dcffa5ac489735f67a9b66a52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_8
+    second: {fileID: 2100000, guid: ef61a056d6581ab4ebc0fcf85edc4a3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photo_Texture2_9
+    second: {fileID: 2100000, guid: 224256e0bea7d124a95446f2e59a1e65, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

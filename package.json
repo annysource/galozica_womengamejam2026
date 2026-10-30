@@ -1,0 +1,28 @@
+{
+    "name": "qa-test-case-recommender",
+    "version": "1.0.0",
+    "description": "A TensorFlow.js test case recommender for Unity QA pull requests",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "browser-sync -w . --server --port 3000",
+        "test": "node --test",
+        "recommend:pr": "node scripts/recommend-pr.js"
+    },
+    "keywords": [
+        "qa",
+        "unity",
+        "test-cases",
+        "tensorflow",
+        "recommendation",
+        "javascript"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^3.0.4"
+    },
+    "dependencies": {
+        "@tensorflow/tfjs": "^4.22.0"
+    }
+}

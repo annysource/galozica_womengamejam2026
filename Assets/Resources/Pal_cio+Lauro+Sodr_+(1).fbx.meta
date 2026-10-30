@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: 24834f562fd079742ae1666db4459a21
+timeCreated: 1511729261
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Group1
+    100002: Group2
+    100004: Group3
+    100006: Group4
+    100008: Group5
+    100010: Group6
+    100012: Group7
+    100014: Group8
+    100016: Group9
+    100018: Mesh1
+    100020: Mesh10
+    100022: Mesh11
+    100024: Mesh12
+    100026: Mesh13
+    100028: Mesh14
+    100030: Mesh15
+    100032: Mesh16
+    100034: Mesh17
+    100036: Mesh18
+    100038: Mesh19
+    100040: Mesh2
+    100042: Mesh20
+    100044: Mesh21
+    100046: Mesh22
+    100048: Mesh23
+    100050: Mesh24
+    100052: Mesh3
+    100054: Mesh4
+    100056: Mesh5
+    100058: Mesh6
+    100060: Mesh7
+    100062: Mesh8
+    100064: Mesh9
+    100066: //RootNode
+    100068: palm1_1
+    100070: palm1_2
+    100072: palm1_3
+    100074: palm1_4
+    100076: palm1_5
+    100078: palm1_6
+    100080: palm1_7
+    100082: palm1_8
+    100084: triang1
+    100086: triang10
+    100088: triang2
+    100090: triang3
+    100092: triang4
+    100094: triang5
+    100096: triang6
+    100098: triang7
+    100100: triang8
+    100102: triang9
+    400000: Group1
+    400002: Group2
+    400004: Group3
+    400006: Group4
+    400008: Group5
+    400010: Group6
+    400012: Group7
+    400014: Group8
+    400016: Group9
+    400018: Mesh1
+    400020: Mesh10
+    400022: Mesh11
+    400024: Mesh12
+    400026: Mesh13
+    400028: Mesh14
+    400030: Mesh15
+    400032: Mesh16
+    400034: Mesh17
+    400036: Mesh18
+    400038: Mesh19
+    400040: Mesh2
+    400042: Mesh20
+    400044: Mesh21
+    400046: Mesh22
+    400048: Mesh23
+    400050: Mesh24
+    400052: Mesh3
+    400054: Mesh4
+    400056: Mesh5
+    400058: Mesh6
+    400060: Mesh7
+    400062: Mesh8
+    400064: Mesh9
+    400066: //RootNode
+    400068: palm1_1
+    400070: palm1_2
+    400072: palm1_3
+    400074: palm1_4
+    400076: palm1_5
+    400078: palm1_6
+    400080: palm1_7
+    400082: palm1_8
+    400084: triang1
+    400086: triang10
+    400088: triang2
+    400090: triang3
+    400092: triang4
+    400094: triang5
+    400096: triang6
+    400098: triang7
+    400100: triang8
+    400102: triang9
+    2300000: Mesh1
+    2300002: Mesh10
+    2300004: Mesh11
+    2300006: Mesh12
+    2300008: Mesh13
+    2300010: Mesh14
+    2300012: Mesh15
+    2300014: Mesh16
+    2300016: Mesh17
+    2300018: Mesh18
+    2300020: Mesh19
+    2300022: Mesh2
+    2300024: Mesh20
+    2300026: Mesh21
+    2300028: Mesh22
+    2300030: Mesh23
+    2300032: Mesh24
+    2300034: Mesh3
+    2300036: Mesh4
+    2300038: Mesh5
+    2300040: Mesh6
+    2300042: Mesh7
+    2300044: Mesh8
+    2300046: Mesh9
+    3300000: Mesh1
+    3300002: Mesh10
+    3300004: Mesh11
+    3300006: Mesh12
+    3300008: Mesh13
+    3300010: Mesh14
+    3300012: Mesh15
+    3300014: Mesh16
+    3300016: Mesh17
+    3300018: Mesh18
+    3300020: Mesh19
+    3300022: Mesh2
+    3300024: Mesh20
+    3300026: Mesh21
+    3300028: Mesh22
+    3300030: Mesh23
+    3300032: Mesh24
+    3300034: Mesh3
+    3300036: Mesh4
+    3300038: Mesh5
+    3300040: Mesh6
+    3300042: Mesh7
+    3300044: Mesh8
+    3300046: Mesh9
+    4300000: Mesh1
+    4300002: Mesh2
+    4300004: Mesh3
+    4300006: Mesh4
+    4300008: Mesh5
+    4300010: Mesh6
+    4300012: Mesh7
+    4300014: Mesh8
+    4300016: Mesh9
+    4300018: Mesh10
+    4300020: Mesh11
+    4300022: Mesh12
+    4300024: Mesh13
+    4300026: Mesh14
+    4300028: Mesh15
+    4300030: Mesh16
+    4300032: Mesh17
+    4300034: Mesh18
+    4300036: Mesh19
+    4300038: Mesh20
+    4300040: Mesh21
+    4300042: Mesh22
+    4300044: Mesh23
+    4300046: Mesh24
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontColor
+    second: {fileID: 2100000, guid: 8ea64f7fbf61c074aaf57e55ebafc6ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _2
+    second: {fileID: 2100000, guid: ce82dfcb308df7f499812e9686d6005c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grama2
+    second: {fileID: 2100000, guid: 74de427bdca9eb641b58e795fb9e719c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro1
+    second: {fileID: 2100000, guid: 08058764dc6c90041af7ccc0bb30cf6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro10
+    second: {fileID: 2100000, guid: 4dfd0656d4f4c1d42b6bbee11301301b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro11_1
+    second: {fileID: 2100000, guid: fe184c92e76b9b54cbc305d04be0d6ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro12
+    second: {fileID: 2100000, guid: 894b25747c4ce954ab4a74a8fa6fa758, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro13_1
+    second: {fileID: 2100000, guid: e0d6ee07a36838b4b99e1263deb74c71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro14
+    second: {fileID: 2100000, guid: eaac92b49708e5a4da7d07d8ca4d9a95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro16
+    second: {fileID: 2100000, guid: 49eaff9d48d1b3d44bb14de8f5b66abb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro17
+    second: {fileID: 2100000, guid: 4d0802ed49554da4c8b017150cfbe18b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro18
+    second: {fileID: 2100000, guid: e38d38e0591987046b69eb94b2e872c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro19
+    second: {fileID: 2100000, guid: cddb8dc3d8932e04d833b18b5e86d710, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro20
+    second: {fileID: 2100000, guid: 40a449dd7d2011441b84464564ddfc08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro21
+    second: {fileID: 2100000, guid: 856d38d0df36b454195155463065e418, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro22
+    second: {fileID: 2100000, guid: e4ec1e3e22dbe1e40b85e9731794d0cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro23
+    second: {fileID: 2100000, guid: 9b27accda7ff15d45b294150e6d65943, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro24
+    second: {fileID: 2100000, guid: e0c1993b655968e4cbe67a9b2a2aa914, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro3
+    second: {fileID: 2100000, guid: d27dd0b56f8c9704b9607d8981e30f8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro4
+    second: {fileID: 2100000, guid: 5122d853712a4974c8cdb16f920feae5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro5
+    second: {fileID: 2100000, guid: 348841d4e4f87304b811bf3408d4525f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro6
+    second: {fileID: 2100000, guid: 1db4f428bd8a8314783afcd4ba9b06c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro7
+    second: {fileID: 2100000, guid: 961939f6c673c2d4eafc2563ee4f8715, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plauro8
+    second: {fileID: 2100000, guid: 06aefdd626ce3314c91ea0791ceebc80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plaurograde
+    second: {fileID: 2100000, guid: e4ab58f0aa343e54eba5dbe33cc212f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plaurotel
+    second: {fileID: 2100000, guid: 49af1f32d12e25f46a67ddcf14f445fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plaurotrans
+    second: {fileID: 2100000, guid: adf2fd1271d50404f89ccc9e052d586e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
