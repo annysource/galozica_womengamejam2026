@@ -15,7 +15,7 @@ export class RecommendationModel {
       entry.files.forEach(f => fileSet.add(f));
       entry.testCases.forEach(id => {
         if (!testCaseSet.has(id)) {
-          throw new Error(Change history references unknown test case ID: \);
+          throw new Error('Unknown test case ID: ' + id);
         }
       });
     });
@@ -37,13 +37,9 @@ export class RecommendationModel {
       });
     });
 
-    const hasPositive = labels.includes(1);
-    const hasNegative = labels.includes(0);
-
-    // Fallback de seguranca caso o historico seja pequeno
-    if (!hasPositive || !hasNegative) {
+    if (!labels.includes(1) || !labels.includes(0)) {
       inputs.push([...new Array(this.allFiles.length).fill(0), 0]);
-      labels.push(hasPositive ? 0 : 1);
+      labels.push(labels.includes(1) ? 0 : 1);
     }
 
     return {
@@ -56,19 +52,9 @@ export class RecommendationModel {
     const { xs, ys } = this.createTrainingData(changeHistory, testCases);
 
     this.model = tf.sequential();
-    this.model.add(tf.layers.dense({
-      inputShape: [this.allFiles.length + 1],
-      units: 16,
-      activation: 'relu'
-    }));
-    this.model.add(tf.layers.dense({
-      units: 8,
-      activation: 'relu'
-    }));
-    this.model.add(tf.layers.dense({
-      units: 1,
-      activation: 'sigmoid'
-    }));
+    this.model.add(tf.layers.dense({ inputShape: [this.allFiles.length + 1], units: 16, activation: 'relu' }));
+    this.model.add(tf.layers.dense({ units: 8, activation: 'relu' }));
+    this.model.add(tf.layers.dense({ units: 1, activation: 'sigmoid' }));
 
     this.model.compile({
       optimizer: tf.train.adam(0.01),
@@ -76,10 +62,7 @@ export class RecommendationModel {
       metrics: ['accuracy']
     });
 
-    await this.model.fit(xs, ys, {
-      epochs: 20,
-      verbose: 0
-    });
+    await this.model.fit(xs, ys, { epochs: 20, verbose: 0 });
 
     xs.dispose();
     ys.dispose();
@@ -98,10 +81,7 @@ export class RecommendationModel {
       const pred = this.model.predict(input);
       const score = (await pred.data())[0];
       
-      predictions.push({
-        testCaseId: this.allTestCases[i],
-        score
-      });
+      predictions.push({ testCaseId: this.allTestCases[i], score });
 
       input.dispose();
       pred.dispose();
