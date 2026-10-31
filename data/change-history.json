@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "commit": "c1a2b3c",
     "files": ["Assets/Scripts/Player/PlayerController.cs", "Assets/Scripts/Player/Movement.cs"],
