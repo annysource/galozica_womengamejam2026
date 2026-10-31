@@ -1,454 +1,513 @@
 [
   {
-    "id": "PLY-001",
-    "functionality": "Player Movement",
-    "component": "PlayerController",
-    "description": "Move player using directional input.",
-    "objective": "Verify that character moves according to input axes and updates animation states.",
-    "preconditions": [
-      "Player object is active in scene.",
-      "Input system is initialized."
-    ],
-    "steps": [
-      "Provide directional movement input.",
-      "Release input."
-    ],
-    "expectedResult": "Player moves in the targeted direction and returns to idle state when input stops.",
-    "priority": "Critical",
-    "testType": "Functional",
-    "tags": [
-      "player",
-      "movement",
-      "input",
-      "animator"
-    ],
-    "gherkin": {
-      "feature": "Player Movement",
-      "scenario": "Character responds to movement keys",
-      "given": "player is active in the game scene",
-      "when": "directional movement keys are pressed",
-      "then": "player character moves in the corresponding direction"
-    }
+    "id": "TC-CORE-001",
+    "feature": "Acessibilidade",
+    "scenario": "Modo de alto contraste para baixa visão",
+    "input": "Ativar modo de alto contraste nas configurações",
+    "expected_result": "Elementos da UI devem alterar paleta para alto contraste mantendo legibilidade sem quebrar o layout"
   },
   {
-    "id": "PLY-002",
-    "functionality": "Player Jump",
-    "component": "PlayerJump",
-    "description": "Perform jump action while grounded.",
-    "objective": "Verify player jumps when grounded and cannot double jump unless specified.",
-    "preconditions": [
-      "Player character is grounded."
-    ],
-    "steps": [
-      "Press jump button.",
-      "Press jump button again mid-air."
-    ],
-    "expectedResult": "Player jumps on first press and airborne constraints are respected on second press.",
-    "priority": "High",
-    "testType": "Functional",
-    "tags": [
-      "player",
-      "jump",
-      "physics",
-      "ground-check"
-    ],
-    "gherkin": {
-      "feature": "Player Jump",
-      "scenario": "Player performs vertical jump",
-      "given": "player is grounded on a surface",
-      "when": "jump key is pressed",
-      "then": "player applies upward force and enters jump state"
-    }
+    "id": "TC-CORE-002",
+    "feature": "Acessibilidade",
+    "scenario": "Leitor de tela para elementos da UI",
+    "input": "Navegar pela UI com leitor de tela ativo",
+    "expected_result": "Todos os textos e botões interativos devem ser lidos corretamente com descrições acessíveis"
   },
   {
-    "id": "PLY-003",
-    "functionality": "Player Health",
-    "component": "HealthSystem",
-    "description": "Process damage and update player life.",
-    "objective": "Verify player health decreases when taking damage and triggers death event at 0.",
-    "preconditions": [
-      "Player has maximum health."
-    ],
-    "steps": [
-      "Trigger damage event on player.",
-      "Reduce health to 0."
-    ],
-    "expectedResult": "Health value decreases appropriately and death event triggers when HP hits zero.",
-    "priority": "Critical",
-    "testType": "Functional",
-    "tags": [
-      "player",
-      "health",
-      "damage",
-      "life"
-    ],
-    "gherkin": {
-      "feature": "Player Health",
-      "scenario": "Player takes lethal damage",
-      "given": "player is alive with active health points",
-      "when": "player receives damage equal to current health",
-      "then": "health reaches zero and trigger death sequence"
-    }
+    "id": "TC-CORE-003",
+    "feature": "Acessibilidade",
+    "scenario": "Mapeamento de controles alternativos",
+    "input": "Remapear ações principais para dispositivos de entrada alternativos",
+    "expected_result": "O jogo deve aceitar e salvar o novo mapeamento sem ignorar entradas ou gerar conflitos"
   },
   {
-    "id": "INV-001",
-    "functionality": "Inventory",
-    "component": "InventoryManager",
-    "description": "Pick up collectable item into inventory.",
-    "objective": "Verify item is destroyed in world and added to inventory slot.",
-    "preconditions": [
-      "Item pickup object exists in scene.",
-      "Inventory has empty slots."
-    ],
-    "steps": [
-      "Collide with or interact with item.",
-      "Open inventory UI."
-    ],
-    "expectedResult": "World item disappears and item icon appears inside inventory slot.",
-    "priority": "High",
-    "testType": "Functional",
-    "tags": [
-      "inventory",
-      "pickup",
-      "item",
-      "trigger"
-    ],
-    "gherkin": {
-      "feature": "Inventory",
-      "scenario": "Collect item from environment",
-      "given": "player approaches a collectable item",
-      "when": "player collides with the pickup object",
-      "then": "item is added to player inventory and removed from world"
-    }
+    "id": "TC-CORE-004",
+    "feature": "Acessibilidade",
+    "scenario": "Legendas dinâmicas para áudio do jogo",
+    "input": "Ativar legendas e reproduzir eventos sonoros críticos",
+    "expected_result": "As legendas devem exibir o texto e a indicação da fonte sonora em tempo real"
   },
   {
-    "id": "INV-002",
-    "functionality": "Inventory",
-    "component": "ItemUsable",
-    "description": "Use item from inventory slot.",
-    "objective": "Verify consuming item applies effect and updates quantity/stack.",
-    "preconditions": [
-      "Player has at least one usable item in inventory."
-    ],
-    "steps": [
-      "Select item in inventory.",
-      "Click Use button."
-    ],
-    "expectedResult": "Item effect is applied to player and inventory quantity decreases by 1.",
-    "priority": "High",
-    "testType": "Functional",
-    "tags": [
-      "inventory",
-      "usable",
-      "consumable",
-      "effect"
-    ],
-    "gherkin": {
-      "feature": "Inventory",
-      "scenario": "Consume health potion from inventory",
-      "given": "player has a health potion in inventory slot",
-      "when": "player uses the item",
-      "then": "player health increases and potion stack count reduces"
-    }
+    "id": "TC-CORE-005",
+    "feature": "Acessibilidade",
+    "scenario": "Redução de efeitos visuais intensos (flash/flashes)",
+    "input": "Ativar opção de redução de flashes nas configurações de vídeo",
+    "expected_result": "Efeitos de luzes piscantes devem ser suavizados ou desativados sem comprometer a jogabilidade"
   },
   {
-    "id": "INT-001",
-    "functionality": "Interaction",
-    "component": "InteractableObject",
-    "description": "Interact with NPC or environmental object.",
-    "objective": "Verify pressing interact key near object triggers interaction event or dialogue.",
-    "preconditions": [
-      "Player is within interaction radius.",
-      "Interaction prompt is visible."
-    ],
-    "steps": [
-      "Approach interactable object.",
-      "Press interact key (e.g. E or F)."
-    ],
-    "expectedResult": "Dialogue UI opens or mechanism is activated.",
-    "priority": "High",
-    "testType": "Functional",
-    "tags": [
-      "interaction",
-      "npc",
-      "dialogue",
-      "trigger"
-    ],
-    "gherkin": {
-      "feature": "Interaction",
-      "scenario": "Interact with quest NPC",
-      "given": "player is standing inside NPC interaction zone",
-      "when": "player presses interaction button",
-      "then": "dialogue window opens displaying NPC text"
-    }
+    "id": "TC-CORE-006",
+    "feature": "Acessibilidade",
+    "scenario": "Ajuste de tamanho de fonte da interface",
+    "input": "Alterar tamanho do texto de 'Normal' para 'Grande' e 'Muito Grande'",
+    "expected_result": "O texto deve redimensionar proporcionalmente em todos os menus sem ultrapassar os limites da tela"
   },
   {
-    "id": "CBT-001",
-    "functionality": "Combat System",
-    "component": "WeaponController",
-    "description": "Execute melee attack action.",
-    "objective": "Verify weapon hitbox deals damage to enemy objects during attack state.",
-    "preconditions": [
-      "Player has weapon equipped.",
-      "Enemy is within melee reach."
-    ],
-    "steps": [
-      "Press attack button.",
-      "Observe enemy response."
-    ],
-    "expectedResult": "Attack animation plays, hit detection triggers, and enemy receives damage.",
-    "priority": "High",
-    "testType": "Functional",
-    "tags": [
-      "combat",
-      "attack",
-      "hitbox",
-      "weapon"
-    ],
-    "gherkin": {
-      "feature": "Combat System",
-      "scenario": "Attack enemy with melee weapon",
-      "given": "enemy is in range of player attack",
-      "when": "player performs attack action",
-      "then": "enemy takes damage and plays hit flash/animation"
-    }
+    "id": "TC-CORE-007",
+    "feature": "Áudio",
+    "scenario": "Ajuste de volume dos canais de áudio",
+    "input": "Alterar sliders de Master, Música e Efeitos no menu de áudio",
+    "expected_result": "O volume de cada canal deve responder imediatamente ao valor ajustado"
   },
   {
-    "id": "AI-001",
-    "functionality": "Enemy AI",
-    "component": "EnemyPatrol",
-    "description": "Patrol between configured waypoints.",
-    "objective": "Verify enemy moves sequentially between patrol waypoints when target is absent.",
-    "preconditions": [
-      "Waypoints assigned in Inspector.",
-      "Player is not in detection zone."
-    ],
-    "steps": [
-      "Observe enemy behavior without player intervention."
-    ],
-    "expectedResult": "Enemy navigates continuously between waypoint positions.",
-    "priority": "Medium",
-    "testType": "Functional",
-    "tags": [
-      "ai",
-      "enemy",
-      "patrol",
-      "navigation"
-    ],
-    "gherkin": {
-      "feature": "Enemy AI",
-      "scenario": "Enemy patrols assigned route",
-      "given": "enemy is idle with patrol path assigned",
-      "when": "player is not detected",
-      "then": "enemy moves along patrol waypoints continuously"
-    }
+    "id": "TC-CORE-008",
+    "feature": "Áudio",
+    "scenario": "Sincronização de áudio com animações de combate",
+    "input": "Executar ataques e ações com efeitos sonoros associados",
+    "expected_result": "O efeito sonoro deve ser reproduzido no exato frame do impacto da animação"
   },
   {
-    "id": "AI-002",
-    "functionality": "Enemy AI",
-    "component": "EnemyDetection",
-    "description": "Detect and chase player when within detection range.",
-    "objective": "Verify enemy switches from Patrol to Chase state when player enters vision sphere.",
-    "preconditions": [
-      "Enemy is patrolling.",
-      "Player is visible to enemy."
-    ],
-    "steps": [
-      "Move player into enemy vision/detection trigger."
-    ],
-    "expectedResult": "Enemy stops patrol and begins moving directly toward player position.",
-    "priority": "High",
-    "testType": "Functional",
-    "tags": [
-      "ai",
-      "enemy",
-      "detection",
-      "chase"
-    ],
-    "gherkin": {
-      "feature": "Enemy AI",
-      "scenario": "Enemy spots player and initiates chase",
-      "given": "enemy is patrolling area",
-      "when": "player enters enemy detection radius",
-      "then": "enemy targets player and changes state to chase"
-    }
+    "id": "TC-CORE-009",
+    "feature": "Áudio",
+    "scenario": "Transição suave de trilha sonora em troca de cena",
+    "input": "Alternar entre o menu principal e o ambiente de jogo",
+    "expected_result": "A música deve fazer fade-out/fade-in suave sem interrupções abruptas ou estalidos"
   },
   {
-    "id": "UI-001",
-    "functionality": "Main Menu",
-    "component": "MainMenuManager",
-    "description": "Start game from Main Menu.",
-    "objective": "Verify clicking Play button loads the game gameplay scene.",
-    "preconditions": [
-      "Main menu scene is loaded."
-    ],
-    "steps": [
-      "Click Play/Start button."
-    ],
-    "expectedResult": "Main menu unloads and first level scene loads successfully.",
-    "priority": "Critical",
-    "testType": "Integration",
-    "tags": [
-      "ui",
-      "menu",
-      "scene-management",
-      "button"
-    ],
-    "gherkin": {
-      "feature": "Main Menu",
-      "scenario": "Start new game session",
-      "given": "player is on main menu screen",
-      "when": "player clicks start game button",
-      "then": "scene manager loads primary game level"
-    }
+    "id": "TC-CORE-010",
+    "feature": "Áudio",
+    "scenario": "Áudio espacial 3D para posicionamento de sons",
+    "input": "Mover a câmera ao redor de uma fonte sonora fixa",
+    "expected_result": "O som deve alternar entre os canais esquerdo/direito conforme a posição da câmera"
   },
   {
-    "id": "UI-002",
-    "functionality": "Pause System",
-    "component": "PauseMenuController",
-    "description": "Toggle pause menu during active gameplay.",
-    "objective": "Verify pressing Escape/Pause sets Time.timeScale to 0 and displays UI.",
-    "preconditions": [
-      "Gameplay scene is active."
-    ],
-    "steps": [
-      "Press Pause key.",
-      "Press Pause key again."
-    ],
-    "expectedResult": "First press pauses time and shows menu; second press hides menu and unpauses time.",
-    "priority": "High",
-    "testType": "Functional",
-    "tags": [
-      "ui",
-      "pause",
-      "timescale",
-      "gameplay"
-    ],
-    "gherkin": {
-      "feature": "Pause System",
-      "scenario": "Pause and resume game",
-      "given": "game is running in active state",
-      "when": "player presses pause button",
-      "then": "time scale sets to zero and pause menu appears"
-    }
+    "id": "TC-CORE-011",
+    "feature": "Áudio",
+    "scenario": "Comportamento de áudio ao pausar o jogo",
+    "input": "Pausar o jogo durante uma cena de combate ativa",
+    "expected_result": "Efeitos sonoros do jogo devem ser pausados e a música de fundo ajustada para o volume de pausa"
   },
   {
-    "id": "UI-003",
-    "functionality": "HUD",
-    "component": "HUDController",
-    "description": "Update score display dynamically.",
-    "objective": "Verify score UI text updates immediately when score points are collected.",
-    "preconditions": [
-      "HUD canvas is active."
-    ],
-    "steps": [
-      "Add points to player score via game event."
-    ],
-    "expectedResult": "Score counter text updates to match new numerical total.",
-    "priority": "Medium",
-    "testType": "Functional",
-    "tags": [
-      "ui",
-      "hud",
-      "score",
-      "event"
-    ],
-    "gherkin": {
-      "feature": "HUD",
-      "scenario": "Score increases after collecting point item",
-      "given": "HUD display shows current score",
-      "when": "player collects point reward",
-      "then": "HUD updates score text with new total"
-    }
+    "id": "TC-CORE-012",
+    "feature": "Combate",
+    "scenario": "Cálculo de dano de ataque básico",
+    "input": "Realizar ataque básico contra inimigo sem armadura",
+    "expected_result": "O valor de dano aplicado à vida do inimigo deve corresponder exatamente à fórmula do atributo"
   },
   {
-    "id": "AUD-001",
-    "functionality": "Audio System",
-    "component": "AudioManager",
-    "description": "Play sound effect on jump.",
-    "objective": "Verify audio source plays corresponding SFX audio clip on jump trigger.",
-    "preconditions": [
-      "Audio listener active.",
-      "SFX volume set above zero."
-    ],
-    "steps": [
-      "Trigger player jump."
-    ],
-    "expectedResult": "Jump sound clip plays through audio source.",
-    "priority": "Low",
-    "testType": "Functional",
-    "tags": [
-      "audio",
-      "sfx",
-      "jump",
-      "sound"
-    ],
-    "gherkin": {
-      "feature": "Audio System",
-      "scenario": "Play jump sound effect",
-      "given": "audio manager is initialized",
-      "when": "player executes jump action",
-      "then": "jump sound effect audio clip is played"
-    }
+    "id": "TC-CORE-013",
+    "feature": "Combate",
+    "scenario": "Execução de habilidade com tempo de recarga (cooldown)",
+    "input": "Usar habilidade especial e tentar reusar imediatamente",
+    "expected_result": "A habilidade deve entrar em cooldown e bloquear nova ativação até o término do tempo"
   },
   {
-    "id": "SAV-001",
-    "functionality": "Save System",
-    "component": "SaveLoadManager",
-    "description": "Save game progress using PlayerPrefs or JSON.",
-    "objective": "Verify player data persists when game is closed and reopened.",
-    "preconditions": [
-      "Player has completed level 1."
-    ],
-    "steps": [
-      "Trigger save function.",
-      "Restart game application.",
-      "Trigger load function."
-    ],
-    "expectedResult": "Loaded state reflects level 1 completion status accurately.",
-    "priority": "Critical",
-    "testType": "Integration",
-    "tags": [
-      "save",
-      "load",
-      "persistence",
-      "data"
-    ],
-    "gherkin": {
-      "feature": "Save System",
-      "scenario": "Persist game save data",
-      "given": "player has saved progress state",
-      "when": "game is restarted and load requested",
-      "then": "saved player state is restored successfully"
-    }
+    "id": "TC-CORE-014",
+    "feature": "Combate",
+    "scenario": "Detecção de acerto (Hitbox) em área de ataque",
+    "input": "Atacar dentro e fora do raio da hitbox do inimigo",
+    "expected_result": "O dano deve ser computado apenas se a hitbox do ataque intersectar a hurtbox do alvo"
   },
   {
-    "id": "CAM-001",
-    "functionality": "Camera Follow",
-    "component": "CameraController",
-    "description": "Camera smooth follow player position.",
-    "objective": "Verify camera position stays centered on or follows player transform smoothly.",
-    "preconditions": [
-      "Camera follow target is assigned to player."
-    ],
-    "steps": [
-      "Move player across scene."
-    ],
-    "expectedResult": "Camera position interpolates towards player position without jittering.",
-    "priority": "High",
-    "testType": "Functional",
-    "tags": [
-      "camera",
-      "follow",
-      "transform",
-      "cinemachine"
-    ],
-    "gherkin": {
-      "feature": "Camera Follow",
-      "scenario": "Camera tracks moving target",
-      "given": "camera target set to player transform",
-      "when": "player moves across map",
-      "then": "camera updates position to maintain player in view"
-    }
+    "id": "TC-CORE-015",
+    "feature": "Combate",
+    "scenario": "Aplicação de efeito de status (atordoamento/stun)",
+    "input": "Aplicar habilidade de atordoamento em um inimigo",
+    "expected_result": "O inimigo deve interromper ações ativas e ficar impossibilitado de agir durante a duração do efeito"
+  },
+  {
+    "id": "TC-CORE-016",
+    "feature": "Combate",
+    "scenario": "Mecanica de defesa e bloqueio de dano",
+    "input": "Bloquear ataque inimigo no momento do impacto",
+    "expected_result": "O dano recebido pelo jogador deve ser reduzido conforme o percentual de mitigação de bloqueio"
+  },
+  {
+    "id": "TC-CORE-017",
+    "feature": "Combate",
+    "scenario": "Derrota de personagem ao zerar os pontos de vida",
+    "input": "Reduzir os pontos de vida do personagem a zero",
+    "expected_result": "O personagem deve entrar no estado de derrota, disparar a animação correspondente e exibir a tela de fim de jogo/game over"
+  },
+  {
+    "id": "TC-CORE-018",
+    "feature": "Desempenho",
+    "scenario": "Taxa de quadros estável em cenários complexos",
+    "input": "Carregar área com múltiplos objetos e efeitos visuais simultâneos",
+    "expected_result": "O jogo deve manter a taxa de FPS acima do limite mínimo estabelecido sem engasgos (stuttering)"
+  },
+  {
+    "id": "TC-CORE-019",
+    "feature": "Desempenho",
+    "scenario": "Uso de memória RAM durante sessões prolongadas",
+    "input": "Manter o jogo em execução e transitar entre fases por 30 minutos",
+    "expected_result": "O consumo de memória RAM deve estabilizar sem evidências de vazamento de memória (memory leak)"
+  },
+  {
+    "id": "TC-CORE-020",
+    "feature": "Desempenho",
+    "scenario": "Tempo de carregamento inicial do jogo",
+    "input": "Iniciar o jogo a partir do executável principal",
+    "expected_result": "A tela de menu deve carregar dentro do tempo limite especificado pelos requisitos do projeto"
+  },
+  {
+    "id": "TC-CORE-021",
+    "feature": "Desempenho",
+    "scenario": "Carregamento assíncrono de assets e cenas",
+    "input": "Transitar para uma nova área do mapa durante a partida",
+    "expected_result": "Os assets devem carregar em segundo plano sem travamentos perceptíveis na jogabilidade"
+  },
+  {
+    "id": "TC-CORE-022",
+    "feature": "Desempenho",
+    "scenario": "Estabilidade de FPS sob carga de física intencional",
+    "input": "Disparar múltiplos eventos de colisão e física simultâneos",
+    "expected_result": "O sistema de física não deve causar queda abrupta de quadros nem travamento no motor do jogo"
+  },
+  {
+    "id": "TC-CORE-023",
+    "feature": "Física",
+    "scenario": "Detecção de colisão com paredes e limites do mapa",
+    "input": "Mover o personagem contra barreiras sólidas do cenário",
+    "expected_result": "O personagem deve parar na colisão sem atravessar a geometria (no-clip)"
+  },
+  {
+    "id": "TC-CORE-024",
+    "feature": "Física",
+    "scenario": "Aplicação de gravidade no salto do personagem",
+    "input": "Executar um salto a partir de uma plataforma elevada",
+    "expected_result": "O personagem deve seguir uma trajetória parabólica consistente e pousar ao atingir o chão"
+  },
+  {
+    "id": "TC-CORE-025",
+    "feature": "Física",
+    "scenario": "Interação com objetos empurráveis (rigidbody)",
+    "input": "Colidir e empurrar um objeto com propriedades físicas ativas",
+    "expected_result": "O objeto deve se mover proporcionalmente à força aplicada e parar ao cessar o contato"
+  },
+  {
+    "id": "TC-CORE-026",
+    "feature": "Física",
+    "scenario": "Comportamento de objetos em superfícies inclinadas",
+    "input": "Posicionar um objeto físico sobre uma rampa inclinada",
+    "expected_result": "O objeto deve deslizar ou permanecer estático conforme o coeficiente de atrito configurado"
+  },
+  {
+    "id": "TC-CORE-027",
+    "feature": "Física",
+    "scenario": "Resposta a zonas de acionamento (triggers)",
+    "input": "Entrar e sair de uma área delimitada por uma trigger de evento",
+    "expected_result": "Os eventos de 'OnEnter' e 'OnExit' devem ser disparados exatamente no momento da travessia"
+  },
+  {
+    "id": "TC-CORE-028",
+    "feature": "Gráficos",
+    "scenario": "Alteração de resolução de exibição",
+    "input": "Seleccionar diferentes resoluções no menu de opções de vídeo",
+    "expected_result": "A exibição deve redimensionar corretamente sem distorcer a proporção da tela (aspect ratio)"
+  },
+  {
+    "id": "TC-CORE-029",
+    "feature": "Gráficos",
+    "scenario": "Alternância entre modo Janela e Tela Cheia",
+    "input": "Mudar a opção de modo de exibição entre Windowed e Fullscreen",
+    "expected_result": "O modo visual deve alterar instantaneamente sem congelar a aplicação"
+  },
+  {
+    "id": "TC-CORE-030",
+    "feature": "Gráficos",
+    "scenario": "Qualidade de sombras e iluminação dinâmica",
+    "input": "Alterar a qualidade gráfica das sombras de 'Baixa' para 'Ultra'",
+    "expected_result": "A resolução e suavidade das sombras devem mudar visualmente conforme a opção escolhida"
+  },
+  {
+    "id": "TC-CORE-031",
+    "feature": "Gráficos",
+    "scenario": "Aplicação de efeitos de pós-processamento",
+    "input": "Ativar e desativar opções de Bloom, Motion Blur e Anti-Aliasing",
+    "expected_result": "Os efeitos devem ser aplicados ou removidos da renderização final da câmera sem artefatos visuais"
+  },
+  {
+    "id": "TC-CORE-032",
+    "feature": "Gráficos",
+    "scenario": "Renderização correta de transparências e partículas",
+    "input": "Spawnar efeitos visuais com transparência sobrepostos ao cenário",
+    "expected_result": "As partículas devem renderizar com a ordem de ordenação (sorting order) correta sem falhas visuais"
+  },
+  {
+    "id": "TC-CORE-033",
+    "feature": "IA / Inimigos",
+    "scenario": "Patrulha de inimigo entre pontos de checagem",
+    "input": "Observar o comportamento de um inimigo não alertado",
+    "expected_result": "O inimigo deve percorrer a rota pré-definida de pontos de patrulha em ciclo"
+  },
+  {
+    "id": "TC-CORE-034",
+    "feature": "IA / Inimigos",
+    "scenario": "Detecção de presença do jogador por campo de visão",
+    "input": "Mover o jogador para dentro do campo de visão do inimigo",
+    "expected_result": "O inimigo deve mudar de estado para 'Alerta/Perseguição' e mover-se na direção do jogador"
+  },
+  {
+    "id": "TC-CORE-035",
+    "feature": "IA / Inimigos",
+    "scenario": "Perda de alvo por obstrução de linha de visão",
+    "input": "Esconder o jogador atrás de um obstáculo sólido após ser visto",
+    "expected_result": "O inimigo deve perder o alvo após o tempo limite e retornar à rota de patrulha"
+  },
+  {
+    "id": "TC-CORE-036",
+    "feature": "IA / Inimigos",
+    "scenario": "Tomada de decisão em combate baseado na distância",
+    "input": "Variar a distância entre o jogador e o inimigo durante o combate",
+    "expected_result": "O inimigo deve alternar entre ataques de curto e longo alcance com base no raio de ataque"
+  },
+  {
+    "id": "TC-CORE-037",
+    "feature": "IA / Inimigos",
+    "scenario": "Navegação com desvio de obstáculos (NavMesh)",
+    "input": "Posicionar obstáculos dinâmicos no caminho de perseguição da IA",
+    "expected_result": "A IA deve recalcular a rota e contornar os obstáculos sem ficar presa"
+  },
+  {
+    "id": "TC-CORE-038",
+    "feature": "Input / Controles",
+    "scenario": "Resposta aos comandos de movimento via teclado/gamepad",
+    "input": "Pressionar as teclas de movimentação (WASD / Analógico)",
+    "expected_result": "O personagem deve mover-se na direção correspondente sem atraso de entrada (input lag)"
+  },
+  {
+    "id": "TC-CORE-039",
+    "feature": "Input / Controles",
+    "scenario": "Suporte e troca dinâmica para controle/gamepad",
+    "input": "Conectar um controle USB/Bluetooth durante a partida",
+    "expected_result": "O jogo deve reconhecer o controle imediatamente e atualizar as dicas de botões na interface"
+  },
+  {
+    "id": "TC-CORE-040",
+    "feature": "Input / Controles",
+    "scenario": "Sensibilidade do ponteiro do mouse e câmeras",
+    "input": "Ajustar o slider de sensibilidade do mouse nas configurações",
+    "expected_result": "A velocidade de rotação da câmera deve alterar proporcionalmente ao ajuste efetuado"
+  },
+  {
+    "id": "TC-CORE-041",
+    "feature": "Input / Controles",
+    "scenario": "Rejeição de entradas múltiplas conflitantes",
+    "input": "Pressionar comandos opostos simultaneamente (ex: Esquerda + Direita)",
+    "expected_result": "O sistema de input deve priorizar o último comando ou manter o personagem neutro sem erros"
+  },
+  {
+    "id": "TC-CORE-042",
+    "feature": "Input / Controles",
+    "scenario": "Configuração personalizada de teclas (Keybinding)",
+    "input": "Alterar a tecla de pulo no menu de remapeamento",
+    "expected_result": "A nova tecla atribuída deve executar a ação de pulo e a tecla antiga deve ser desativada"
+  },
+  {
+    "id": "TC-CORE-043",
+    "feature": "Interface (UI)",
+    "scenario": "Navegação em menus principais via teclado e mouse",
+    "input": "Clicar e navegar com as setas entre as opções do menu",
+    "expected_result": "Os destaques de foco visual devem acompanhar a seleção e os botões devem responder ao acionamento"
+  },
+  {
+    "id": "TC-CORE-044",
+    "feature": "Interface (UI)",
+    "scenario": "Atualização da barra de vida e recursos em tempo real",
+    "input": "Receber dano ou consumir um item de restauração",
+    "expected_result": "A barra de vida visual deve preencher ou esvaziar suavemente refletindo o valor exato do atributo"
+  },
+  {
+    "id": "TC-CORE-045",
+    "feature": "Interface (UI)",
+    "scenario": "Exibição e fechamento da tela de pause",
+    "input": "Pressionar a tecla ESC / Start durante a partida",
+    "expected_result": "O menu de pause deve sobrepor a tela, interromper o tempo do jogo e ser fechado ao pressionar novamente"
+  },
+  {
+    "id": "TC-CORE-046",
+    "feature": "Interface (UI)",
+    "scenario": "Notificações na tela e mensagens de sistema",
+    "input": "Disparar uma conquista ou aviso de missão",
+    "expected_result": "O pop-up de notificação deve surgir no canto da tela, permanecer pelo tempo definido e desaparecer"
+  },
+  {
+    "id": "TC-CORE-047",
+    "feature": "Interface (UI)",
+    "scenario": "Adaptabilidade da UI a diferentes proporções de tela",
+    "input": "Alterar a resolução de exibição para 16:9, 16:10 e 21:9",
+    "expected_result": "Os elementos da UI devem manter a proporção e as ancoragens nos cantos da tela sem sobreposições"
+  },
+  {
+    "id": "TC-CORE-048",
+    "feature": "Inventário",
+    "scenario": "Adição de item ao inventário ao coletar do chão",
+    "input": "Passar por cima de um item coletável no cenário",
+    "expected_result": "O item deve desaparecer do cenário e surgir no primeiro slot livre do inventário"
+  },
+  {
+    "id": "TC-CORE-049",
+    "feature": "Inventário",
+    "scenario": "Consumo de item utilizável (poção/buff)",
+    "input": "Selecionar e usar um item consumível do inventário",
+    "expected_result": "O efeito do item deve ser aplicado ao personagem e a quantidade no inventário deve decrementar em 1"
+  },
+  {
+    "id": "TC-CORE-050",
+    "feature": "Inventário",
+    "scenario": "Limite máximo de capacidade de slots",
+    "input": "Tentar coletar um item estando com o inventário completamente cheio",
+    "expected_result": "O item deve permanecer no chão e uma mensagem de 'Inventário Cheio' deve ser exibida"
+  },
+  {
+    "id": "TC-CORE-051",
+    "feature": "Inventário",
+    "scenario": "Reorganização de itens via arrastar e soltar (Drag and Drop)",
+    "input": "Mover um item do Slot A para o Slot B",
+    "expected_result": "O item deve mudar de posição e, se o Slot B estiver ocupado, os itens devem trocar de lugar"
+  },
+  {
+    "id": "TC-CORE-052",
+    "feature": "Inventário",
+    "scenario": "Descarte de item para o mundo do jogo",
+    "input": "Selecionar a opção de descartar um item do inventário",
+    "expected_result": "O item deve ser removido do inventário e instanciado no chão próximo ao personagem"
+  },
+  {
+    "id": "TC-CORE-053",
+    "feature": "Localização / Idioma",
+    "scenario": "Alternância de idioma dos textos do jogo",
+    "input": "Alterar o idioma das opções de 'Português' para 'Inglês'",
+    "expected_result": "Todos os textos da UI, menus e diálogos devem ser atualizados instantaneamente para o novo idioma"
+  },
+  {
+    "id": "TC-CORE-054",
+    "feature": "Localização / Idioma",
+    "scenario": "Formatação de caracteres especiais e acentuação",
+    "input": "Exibir telas com textos contendo acentuação e caracteres especifícos (ex: ç, á, õ)",
+    "expected_result": "A fonte utilizada deve renderizar todos os caracteres sem glifos ausentes (caixas vazias/interrogações)"
+  },
+  {
+    "id": "TC-CORE-055",
+    "feature": "Localização / Idioma",
+    "scenario": "Sincronização de dublagem/áudio por idioma",
+    "input": "Selecionar um idioma de áudio diferente no menu de configurações",
+    "expected_result": "As falas e diálogos do jogo devem ser reproduzidos na faixa de áudio do idioma selecionado"
+  },
+  {
+    "id": "TC-CORE-056",
+    "feature": "Localização / Idioma",
+    "scenario": "Persistência do idioma selecionado após reiniciar",
+    "input": "Trocar o idioma, fechar o jogo e abrir novamente",
+    "expected_result": "O jogo deve iniciar carregando o idioma selecionado na sessão anterior"
+  },
+  {
+    "id": "TC-CORE-057",
+    "feature": "Localização / Idioma",
+    "scenario": "Ajuste de caixas de texto ao tamanho dos termos traduzidos",
+    "input": "Alternar para um idioma com palavras mais longas que o original",
+    "expected_result": "As caixas de texto devem expandir ou ajustar a fonte sem truncar ou estourar os limites da caixa"
+  },
+  {
+    "id": "TC-CORE-058",
+    "feature": "Mecanicas de Jogo",
+    "scenario": "Interação com elementos acionáveis do cenário",
+    "input": "Pressionar a tecla de ação perto de uma porta ou alavanca",
+    "expected_result": "O elemento interativo deve mudar de estado (abrir/ativar) e disparar o evento correspondente"
+  },
+  {
+    "id": "TC-CORE-059",
+    "feature": "Mecanicas de Jogo",
+    "scenario": "Acúmulo de pontos de experiência e ganho de nível",
+    "input": "Derrotar inimigos até atingir a quantidade necessária de XP",
+    "expected_result": "O nível do personagem deve incrementar, atualizando seus atributos e exibindo o efeito visual de Level Up"
+  },
+  {
+    "id": "TC-CORE-060",
+    "feature": "Mecanicas de Jogo",
+    "scenario": "Mecânica de pulo duplo / habilidades de mobilidade",
+    "input": "Pressionar a tecla de pulo novamente no ar",
+    "expected_result": "O personagem deve executar o segundo impulso vertical respeitando o limite de pulos autorizados"
+  },
+  {
+    "id": "TC-CORE-061",
+    "feature": "Mecanicas de Jogo",
+    "scenario": "Consumo e regeneração de estamina/energia",
+    "input": "Executar uma esquiva ou corrida contínua",
+    "expected_result": "A barra de estamina deve diminuir durante a ação e iniciar a regeneração automática ao cessar o uso"
+  },
+  {
+    "id": "TC-CORE-062",
+    "feature": "Mecanicas de Jogo",
+    "scenario": "Mecanica de morte e respawn do jogador",
+    "input": "Deixar a vida do jogador chegar a zero em uma partida",
+    "expected_result": "O jogador deve reaparecer no último ponto de controle (checkpoint) com o estado reiniciado corretamente"
+  },
+  {
+    "id": "TC-CORE-063",
+    "feature": "Rede / Multiplayer",
+    "scenario": "Conexão de jogador à sala de partida",
+    "input": "Entrar em um lobby de partida via código ou busca rápida",
+    "expected_result": "O jogador deve conectar-se com sucesso e figurar na lista de participantes da sala"
+  },
+  {
+    "id": "TC-CORE-064",
+    "feature": "Rede / Multiplayer",
+    "scenario": "Sincronização de posição de jogadores em rede",
+    "input": "Mover o personagem em um cliente conectado",
+    "expected_result": "A posição e animação do personagem devem ser replicadas em tempo real nos outros clientes com baixa latência"
+  },
+  {
+    "id": "TC-CORE-065",
+    "feature": "Rede / Multiplayer",
+    "scenario": "Tratamento de desconexão inesperada de cliente",
+    "input": "Desconectar a rede de um dos clientes durante a partida",
+    "expected_result": "O servidor deve remover o jogador desconectado e exibir um aviso apropriado para os demais participantes"
+  },
+  {
+    "id": "TC-CORE-066",
+    "feature": "Rede / Multiplayer",
+    "scenario": "Reconexão a uma partida em andamento",
+    "input": "Reestabelecer a conexão de rede após uma queda temporária",
+    "expected_result": "O cliente deve conseguir reconectar à sessão e sincronizar o estado atual do jogo sem erros"
+  },
+  {
+    "id": "TC-CORE-067",
+    "feature": "Rede / Multiplayer",
+    "scenario": "Latência elevada e compensação de lag",
+    "input": "Simular alta latência (ping elevado) em uma sessão multiplayer",
+    "expected_result": "O sistema de interpolação deve suavizar a movimentação sem teletransportar objetos bruscamente"
+  },
+  {
+    "id": "TC-CORE-068",
+    "feature": "Salvamento / Save System",
+    "scenario": "Salvamento automático em checkpoints",
+    "input": "Atravessar uma linha de checkpoint no cenário",
+    "expected_result": "O progresso do jogo deve ser salvo em disco sem interromper a jogabilidade"
+  },
+  {
+    "id": "TC-CORE-069",
+    "feature": "Salvamento / Save System",
+    "scenario": "Carregamento de dados de salvamento (Load)",
+    "input": "Selecionar 'Carregar Jogo' a partir do menu principal",
+    "expected_result": "O jogo deve restaurar a posição do personagem, atributos e estado do inventário exatamente como salvos"
+  },
+  {
+    "id": "TC-CORE-070",
+    "feature": "Salvamento / Save System",
+    "scenario": "Salvamento manual através do menu de pausa",
+    "input": "Acessar o menu e confirmar o salvamento em um slot específico",
+    "expected_result": "O arquivo de save deve ser atualizado no disco com a data/hora atuais e confirmação visual"
+  },
+  {
+    "id": "TC-CORE-071",
+    "feature": "Salvamento / Save System",
+    "scenario": "Detecção de arquivo de salvamento corrompido",
+    "input": "Tentar carregar um arquivo de save modificado incorretamente ou corrompido",
+    "expected_result": "O sistema deve identificar a corrupção, exibir um alerta e impedir o travamento da aplicação"
+  },
+  {
+    "id": "TC-CORE-072",
+    "feature": "Salvamento / Save System",
+    "scenario": "Persistência das configurações do jogo",
+    "input": "Alterar opções de som, vídeo e controle e reiniciar a aplicação",
+    "expected_result": "Todas as preferências alteradas devem permanecer salvas e aplicadas na nova sessão"
+  },
+  {
+    "id": "TC-CORE-073",
+    "feature": "Salvamento / Save System",
+    "scenario": "Exclusão de slot de salvamento existente",
+    "input": "Selecionar e confirmar a exclusão de um save salvo no menu",
+    "expected_result": "O slot correspondente deve ficar limpo e os dados associados apagados do armazenamento"
   }
 ]
