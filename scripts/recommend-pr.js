@@ -79,8 +79,8 @@ const context = {
 };
 
 const [testCases, history] = await Promise.all([
-    readFile(new URL('../data/test-cases.json', import.meta.url), 'utf8').then(JSON.parse),
-    readFile(new URL('../data/change-history.json', import.meta.url), 'utf8').then(JSON.parse)
+    readFile(new URL('../test-cases.json', import.meta.url), 'utf8').then(JSON.parse),
+    readFile(new URL('../change-history.json', import.meta.url), 'utf8').then(JSON.parse)
 ]);
 
 await tf.ready();

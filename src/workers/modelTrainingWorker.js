@@ -11,7 +11,7 @@ let testCases;
 let vocabulary;
 
 async function train({ history }) {
-    testCases = await (await fetch('/data/test-cases.json')).json();
+    testCases = await (await fetch('/test-cases.json')).json();
     vocabulary = createVocabulary(testCases, history);
     const trainingData = createTrainingData(tf, testCases, history, vocabulary);
     postMessage({ type: 'progress', progress: 5 });
