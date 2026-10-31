@@ -1,0 +1,34 @@
+[
+  {
+    "id": "demo-inventory-selection",
+    "branch": "feature/inventory-selection-state",
+    "title": "Keep selected inventory item in sync",
+    "description": "Update the inventory UI selection state when the active item changes.",
+    "commitMessages": ["Fix selected item state in inventory panel"],
+    "selectedTestCaseIds": ["INV-001", "INV-002"]
+  },
+  {
+    "id": "demo-player-boundaries",
+    "branch": "fix/player-movement-boundaries",
+    "title": "Prevent player from leaving playable area",
+    "description": "Adjust player movement handling at the scene boundary.",
+    "commitMessages": ["Clamp player movement to playable bounds"],
+    "selectedTestCaseIds": ["PLY-001"]
+  },
+  {
+    "id": "demo-save-restore",
+    "branch": "feature/save-progress",
+    "title": "Restore saved player progress",
+    "description": "Persist progress and restore it through the save system.",
+    "commitMessages": ["Add saved progress restoration"],
+    "selectedTestCaseIds": ["SAV-001"]
+  },
+  {
+    "id": "demo-combat-target",
+    "branch": "fix/combat-targeting",
+    "title": "Update combat target handling",
+    "description": "Correct target selection and combat action state.",
+    "commitMessages": ["Fix combat target state update"],
+    "selectedTestCaseIds": ["CBT-001"]
+  }
+]

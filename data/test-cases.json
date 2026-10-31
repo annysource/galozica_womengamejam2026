@@ -1,0 +1,454 @@
+[
+  {
+    "id": "PLY-001",
+    "functionality": "Player Movement",
+    "component": "PlayerController",
+    "description": "Move player using directional input.",
+    "objective": "Verify that character moves according to input axes and updates animation states.",
+    "preconditions": [
+      "Player object is active in scene.",
+      "Input system is initialized."
+    ],
+    "steps": [
+      "Provide directional movement input.",
+      "Release input."
+    ],
+    "expectedResult": "Player moves in the targeted direction and returns to idle state when input stops.",
+    "priority": "Critical",
+    "testType": "Functional",
+    "tags": [
+      "player",
+      "movement",
+      "input",
+      "animator"
+    ],
+    "gherkin": {
+      "feature": "Player Movement",
+      "scenario": "Character responds to movement keys",
+      "given": "player is active in the game scene",
+      "when": "directional movement keys are pressed",
+      "then": "player character moves in the corresponding direction"
+    }
+  },
+  {
+    "id": "PLY-002",
+    "functionality": "Player Jump",
+    "component": "PlayerJump",
+    "description": "Perform jump action while grounded.",
+    "objective": "Verify player jumps when grounded and cannot double jump unless specified.",
+    "preconditions": [
+      "Player character is grounded."
+    ],
+    "steps": [
+      "Press jump button.",
+      "Press jump button again mid-air."
+    ],
+    "expectedResult": "Player jumps on first press and airborne constraints are respected on second press.",
+    "priority": "High",
+    "testType": "Functional",
+    "tags": [
+      "player",
+      "jump",
+      "physics",
+      "ground-check"
+    ],
+    "gherkin": {
+      "feature": "Player Jump",
+      "scenario": "Player performs vertical jump",
+      "given": "player is grounded on a surface",
+      "when": "jump key is pressed",
+      "then": "player applies upward force and enters jump state"
+    }
+  },
+  {
+    "id": "PLY-003",
+    "functionality": "Player Health",
+    "component": "HealthSystem",
+    "description": "Process damage and update player life.",
+    "objective": "Verify player health decreases when taking damage and triggers death event at 0.",
+    "preconditions": [
+      "Player has maximum health."
+    ],
+    "steps": [
+      "Trigger damage event on player.",
+      "Reduce health to 0."
+    ],
+    "expectedResult": "Health value decreases appropriately and death event triggers when HP hits zero.",
+    "priority": "Critical",
+    "testType": "Functional",
+    "tags": [
+      "player",
+      "health",
+      "damage",
+      "life"
+    ],
+    "gherkin": {
+      "feature": "Player Health",
+      "scenario": "Player takes lethal damage",
+      "given": "player is alive with active health points",
+      "when": "player receives damage equal to current health",
+      "then": "health reaches zero and trigger death sequence"
+    }
+  },
+  {
+    "id": "INV-001",
+    "functionality": "Inventory",
+    "component": "InventoryManager",
+    "description": "Pick up collectable item into inventory.",
+    "objective": "Verify item is destroyed in world and added to inventory slot.",
+    "preconditions": [
+      "Item pickup object exists in scene.",
+      "Inventory has empty slots."
+    ],
+    "steps": [
+      "Collide with or interact with item.",
+      "Open inventory UI."
+    ],
+    "expectedResult": "World item disappears and item icon appears inside inventory slot.",
+    "priority": "High",
+    "testType": "Functional",
+    "tags": [
+      "inventory",
+      "pickup",
+      "item",
+      "trigger"
+    ],
+    "gherkin": {
+      "feature": "Inventory",
+      "scenario": "Collect item from environment",
+      "given": "player approaches a collectable item",
+      "when": "player collides with the pickup object",
+      "then": "item is added to player inventory and removed from world"
+    }
+  },
+  {
+    "id": "INV-002",
+    "functionality": "Inventory",
+    "component": "ItemUsable",
+    "description": "Use item from inventory slot.",
+    "objective": "Verify consuming item applies effect and updates quantity/stack.",
+    "preconditions": [
+      "Player has at least one usable item in inventory."
+    ],
+    "steps": [
+      "Select item in inventory.",
+      "Click Use button."
+    ],
+    "expectedResult": "Item effect is applied to player and inventory quantity decreases by 1.",
+    "priority": "High",
+    "testType": "Functional",
+    "tags": [
+      "inventory",
+      "usable",
+      "consumable",
+      "effect"
+    ],
+    "gherkin": {
+      "feature": "Inventory",
+      "scenario": "Consume health potion from inventory",
+      "given": "player has a health potion in inventory slot",
+      "when": "player uses the item",
+      "then": "player health increases and potion stack count reduces"
+    }
+  },
+  {
+    "id": "INT-001",
+    "functionality": "Interaction",
+    "component": "InteractableObject",
+    "description": "Interact with NPC or environmental object.",
+    "objective": "Verify pressing interact key near object triggers interaction event or dialogue.",
+    "preconditions": [
+      "Player is within interaction radius.",
+      "Interaction prompt is visible."
+    ],
+    "steps": [
+      "Approach interactable object.",
+      "Press interact key (e.g. E or F)."
+    ],
+    "expectedResult": "Dialogue UI opens or mechanism is activated.",
+    "priority": "High",
+    "testType": "Functional",
+    "tags": [
+      "interaction",
+      "npc",
+      "dialogue",
+      "trigger"
+    ],
+    "gherkin": {
+      "feature": "Interaction",
+      "scenario": "Interact with quest NPC",
+      "given": "player is standing inside NPC interaction zone",
+      "when": "player presses interaction button",
+      "then": "dialogue window opens displaying NPC text"
+    }
+  },
+  {
+    "id": "CBT-001",
+    "functionality": "Combat System",
+    "component": "WeaponController",
+    "description": "Execute melee attack action.",
+    "objective": "Verify weapon hitbox deals damage to enemy objects during attack state.",
+    "preconditions": [
+      "Player has weapon equipped.",
+      "Enemy is within melee reach."
+    ],
+    "steps": [
+      "Press attack button.",
+      "Observe enemy response."
+    ],
+    "expectedResult": "Attack animation plays, hit detection triggers, and enemy receives damage.",
+    "priority": "High",
+    "testType": "Functional",
+    "tags": [
+      "combat",
+      "attack",
+      "hitbox",
+      "weapon"
+    ],
+    "gherkin": {
+      "feature": "Combat System",
+      "scenario": "Attack enemy with melee weapon",
+      "given": "enemy is in range of player attack",
+      "when": "player performs attack action",
+      "then": "enemy takes damage and plays hit flash/animation"
+    }
+  },
+  {
+    "id": "AI-001",
+    "functionality": "Enemy AI",
+    "component": "EnemyPatrol",
+    "description": "Patrol between configured waypoints.",
+    "objective": "Verify enemy moves sequentially between patrol waypoints when target is absent.",
+    "preconditions": [
+      "Waypoints assigned in Inspector.",
+      "Player is not in detection zone."
+    ],
+    "steps": [
+      "Observe enemy behavior without player intervention."
+    ],
+    "expectedResult": "Enemy navigates continuously between waypoint positions.",
+    "priority": "Medium",
+    "testType": "Functional",
+    "tags": [
+      "ai",
+      "enemy",
+      "patrol",
+      "navigation"
+    ],
+    "gherkin": {
+      "feature": "Enemy AI",
+      "scenario": "Enemy patrols assigned route",
+      "given": "enemy is idle with patrol path assigned",
+      "when": "player is not detected",
+      "then": "enemy moves along patrol waypoints continuously"
+    }
+  },
+  {
+    "id": "AI-002",
+    "functionality": "Enemy AI",
+    "component": "EnemyDetection",
+    "description": "Detect and chase player when within detection range.",
+    "objective": "Verify enemy switches from Patrol to Chase state when player enters vision sphere.",
+    "preconditions": [
+      "Enemy is patrolling.",
+      "Player is visible to enemy."
+    ],
+    "steps": [
+      "Move player into enemy vision/detection trigger."
+    ],
+    "expectedResult": "Enemy stops patrol and begins moving directly toward player position.",
+    "priority": "High",
+    "testType": "Functional",
+    "tags": [
+      "ai",
+      "enemy",
+      "detection",
+      "chase"
+    ],
+    "gherkin": {
+      "feature": "Enemy AI",
+      "scenario": "Enemy spots player and initiates chase",
+      "given": "enemy is patrolling area",
+      "when": "player enters enemy detection radius",
+      "then": "enemy targets player and changes state to chase"
+    }
+  },
+  {
+    "id": "UI-001",
+    "functionality": "Main Menu",
+    "component": "MainMenuManager",
+    "description": "Start game from Main Menu.",
+    "objective": "Verify clicking Play button loads the game gameplay scene.",
+    "preconditions": [
+      "Main menu scene is loaded."
+    ],
+    "steps": [
+      "Click Play/Start button."
+    ],
+    "expectedResult": "Main menu unloads and first level scene loads successfully.",
+    "priority": "Critical",
+    "testType": "Integration",
+    "tags": [
+      "ui",
+      "menu",
+      "scene-management",
+      "button"
+    ],
+    "gherkin": {
+      "feature": "Main Menu",
+      "scenario": "Start new game session",
+      "given": "player is on main menu screen",
+      "when": "player clicks start game button",
+      "then": "scene manager loads primary game level"
+    }
+  },
+  {
+    "id": "UI-002",
+    "functionality": "Pause System",
+    "component": "PauseMenuController",
+    "description": "Toggle pause menu during active gameplay.",
+    "objective": "Verify pressing Escape/Pause sets Time.timeScale to 0 and displays UI.",
+    "preconditions": [
+      "Gameplay scene is active."
+    ],
+    "steps": [
+      "Press Pause key.",
+      "Press Pause key again."
+    ],
+    "expectedResult": "First press pauses time and shows menu; second press hides menu and unpauses time.",
+    "priority": "High",
+    "testType": "Functional",
+    "tags": [
+      "ui",
+      "pause",
+      "timescale",
+      "gameplay"
+    ],
+    "gherkin": {
+      "feature": "Pause System",
+      "scenario": "Pause and resume game",
+      "given": "game is running in active state",
+      "when": "player presses pause button",
+      "then": "time scale sets to zero and pause menu appears"
+    }
+  },
+  {
+    "id": "UI-003",
+    "functionality": "HUD",
+    "component": "HUDController",
+    "description": "Update score display dynamically.",
+    "objective": "Verify score UI text updates immediately when score points are collected.",
+    "preconditions": [
+      "HUD canvas is active."
+    ],
+    "steps": [
+      "Add points to player score via game event."
+    ],
+    "expectedResult": "Score counter text updates to match new numerical total.",
+    "priority": "Medium",
+    "testType": "Functional",
+    "tags": [
+      "ui",
+      "hud",
+      "score",
+      "event"
+    ],
+    "gherkin": {
+      "feature": "HUD",
+      "scenario": "Score increases after collecting point item",
+      "given": "HUD display shows current score",
+      "when": "player collects point reward",
+      "then": "HUD updates score text with new total"
+    }
+  },
+  {
+    "id": "AUD-001",
+    "functionality": "Audio System",
+    "component": "AudioManager",
+    "description": "Play sound effect on jump.",
+    "objective": "Verify audio source plays corresponding SFX audio clip on jump trigger.",
+    "preconditions": [
+      "Audio listener active.",
+      "SFX volume set above zero."
+    ],
+    "steps": [
+      "Trigger player jump."
+    ],
+    "expectedResult": "Jump sound clip plays through audio source.",
+    "priority": "Low",
+    "testType": "Functional",
+    "tags": [
+      "audio",
+      "sfx",
+      "jump",
+      "sound"
+    ],
+    "gherkin": {
+      "feature": "Audio System",
+      "scenario": "Play jump sound effect",
+      "given": "audio manager is initialized",
+      "when": "player executes jump action",
+      "then": "jump sound effect audio clip is played"
+    }
+  },
+  {
+    "id": "SAV-001",
+    "functionality": "Save System",
+    "component": "SaveLoadManager",
+    "description": "Save game progress using PlayerPrefs or JSON.",
+    "objective": "Verify player data persists when game is closed and reopened.",
+    "preconditions": [
+      "Player has completed level 1."
+    ],
+    "steps": [
+      "Trigger save function.",
+      "Restart game application.",
+      "Trigger load function."
+    ],
+    "expectedResult": "Loaded state reflects level 1 completion status accurately.",
+    "priority": "Critical",
+    "testType": "Integration",
+    "tags": [
+      "save",
+      "load",
+      "persistence",
+      "data"
+    ],
+    "gherkin": {
+      "feature": "Save System",
+      "scenario": "Persist game save data",
+      "given": "player has saved progress state",
+      "when": "game is restarted and load requested",
+      "then": "saved player state is restored successfully"
+    }
+  },
+  {
+    "id": "CAM-001",
+    "functionality": "Camera Follow",
+    "component": "CameraController",
+    "description": "Camera smooth follow player position.",
+    "objective": "Verify camera position stays centered on or follows player transform smoothly.",
+    "preconditions": [
+      "Camera follow target is assigned to player."
+    ],
+    "steps": [
+      "Move player across scene."
+    ],
+    "expectedResult": "Camera position interpolates towards player position without jittering.",
+    "priority": "High",
+    "testType": "Functional",
+    "tags": [
+      "camera",
+      "follow",
+      "transform",
+      "cinemachine"
+    ],
+    "gherkin": {
+      "feature": "Camera Follow",
+      "scenario": "Camera tracks moving target",
+      "given": "camera target set to player transform",
+      "when": "player moves across map",
+      "then": "camera updates position to maintain player in view"
+    }
+  }
+]
