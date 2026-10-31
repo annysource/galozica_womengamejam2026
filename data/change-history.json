@@ -1,32 +1,22 @@
 [
   {
     "commit": "c1a2b3c",
-    "files": ["Assets/Scripts/Player/PlayerController.cs", "Assets/Scripts/Player/Movement.cs"],
-    "testCases": ["TC-CORE-024", "TC-CORE-038", "TC-CORE-041", "TC-CORE-060", "TC-CORE-061"]
+    "files": ["README.md", "Assets/Scripts/Player/PlayerController.cs"],
+    "testCases": ["TC-CORE-024", "TC-CORE-038", "TC-CORE-060"]
   },
   {
     "commit": "d4e5f6a",
-    "files": ["Assets/Scripts/Inventory/InventoryManager.cs", "Assets/Scripts/Items/ItemSlot.cs"],
-    "testCases": ["TC-CORE-048", "TC-CORE-049", "TC-CORE-050", "TC-CORE-051", "TC-CORE-052"]
+    "files": ["Assets/Scripts/Inventory/InventoryManager.cs"],
+    "testCases": ["TC-CORE-048", "TC-CORE-049", "TC-CORE-050"]
   },
   {
     "commit": "7b8c9d0",
-    "files": ["Assets/Scripts/UI/PauseMenu.cs", "Assets/Scripts/UI/HUDManager.cs"],
-    "testCases": ["TC-CORE-043", "TC-CORE-044", "TC-CORE-045", "TC-CORE-046", "TC-CORE-047"]
+    "files": ["Assets/Scripts/UI/PauseMenu.cs"],
+    "testCases": ["TC-CORE-043", "TC-CORE-045"]
   },
   {
     "commit": "e1f2a3b",
-    "files": ["Assets/Scripts/Audio/AudioManager.cs", "Assets/Audio/SFX/Attack.wav"],
-    "testCases": ["TC-CORE-007", "TC-CORE-008", "TC-CORE-009", "TC-CORE-010", "TC-CORE-011"]
-  },
-  {
-    "commit": "f3e2d1c",
-    "files": ["Assets/Scripts/Combat/CombatSystem.cs", "Assets/Scripts/Combat/Weapon.cs"],
-    "testCases": ["TC-CORE-012", "TC-CORE-013", "TC-CORE-014", "TC-CORE-015", "TC-CORE-016"]
-  },
-  {
-    "commit": "a9b8c7d",
-    "files": ["Assets/Scripts/SaveSystem/SaveManager.cs", "Assets/Scripts/SaveSystem/PlayerData.cs"],
-    "testCases": ["TC-CORE-068", "TC-CORE-069", "TC-CORE-070", "TC-CORE-071", "TC-CORE-072"]
+    "files": ["Assets/Scripts/Audio/AudioManager.cs"],
+    "testCases": ["TC-CORE-007", "TC-CORE-009"]
   }
 ]
