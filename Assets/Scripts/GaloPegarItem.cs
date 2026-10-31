@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GaloPegarItem : MonoBehaviour
 {
-    public enum ItemType { Nenhum, Baseado, Cigarro }
+    public enum ItemType { Nenhum, Baseado, Cigarro, Batata }
 
     public Transform pontoBico;
     public Transform pontoSoltar;

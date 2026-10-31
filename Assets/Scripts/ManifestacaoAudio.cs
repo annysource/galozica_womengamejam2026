@@ -17,11 +17,11 @@ public class ManifestacaoAudio : MonoBehaviour
     {
         if (concluida) return;
         concluida = true;
-
-        audioManifestacao.mute = true;
         audioVitoria.Play();
+        audioManifestacao.mute = true;
+        
         fluxoDeTelas.AguardarAudioEVencer(audioVitoria);
-       
+       //teste de audio, commit so pra ativar recomendacao
     }
 
 
