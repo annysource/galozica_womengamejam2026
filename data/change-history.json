@@ -1,34 +1,22 @@
 [
   {
-    "id": "demo-inventory-selection",
-    "branch": "feature/inventory-selection-state",
-    "title": "Keep selected inventory item in sync",
-    "description": "Update the inventory UI selection state when the active item changes.",
-    "commitMessages": ["Fix selected item state in inventory panel"],
-    "selectedTestCaseIds": ["INV-001", "INV-002"]
+    "commit": "c1a2b3c",
+    "files": ["src/Player/PlayerController.cs", "Assets/Scripts/Player/Movement.cs"],
+    "testCases": ["TC-CORE-016", "TC-CORE-038", "TC-CORE-060"]
   },
   {
-    "id": "demo-player-boundaries",
-    "branch": "fix/player-movement-boundaries",
-    "title": "Prevent player from leaving playable area",
-    "description": "Adjust player movement handling at the scene boundary.",
-    "commitMessages": ["Clamp player movement to playable bounds"],
-    "selectedTestCaseIds": ["PLY-001"]
+    "commit": "d4e5f6a",
+    "files": ["Assets/Scripts/Inventory/InventoryManager.cs", "src/Items/ItemSlot.cs"],
+    "testCases": ["TC-CORE-048", "TC-CORE-049", "TC-CORE-050", "TC-CORE-051"]
   },
   {
-    "id": "demo-save-restore",
-    "branch": "feature/save-progress",
-    "title": "Restore saved player progress",
-    "description": "Persist progress and restore it through the save system.",
-    "commitMessages": ["Add saved progress restoration"],
-    "selectedTestCaseIds": ["SAV-001"]
+    "commit": "7b8c9d0",
+    "files": ["Assets/Scripts/UI/PauseMenu.cs", "Assets/Scripts/UI/HUDManager.cs"],
+    "testCases": ["TC-CORE-043", "TC-CORE-044", "TC-CORE-045", "TC-CORE-047"]
   },
   {
-    "id": "demo-combat-target",
-    "branch": "fix/combat-targeting",
-    "title": "Update combat target handling",
-    "description": "Correct target selection and combat action state.",
-    "commitMessages": ["Fix combat target state update"],
-    "selectedTestCaseIds": ["CBT-001"]
+    "commit": "e1f2a3b",
+    "files": ["Assets/Scripts/Audio/AudioManager.cs", "Assets/Audio/SFX/Attack.wav"],
+    "testCases": ["TC-CORE-007", "TC-CORE-008", "TC-CORE-009", "TC-CORE-011"]
   }
 ]
