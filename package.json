@@ -23,6 +23,7 @@
         "browser-sync": "^3.0.4"
     },
     "dependencies": {
-        "@tensorflow/tfjs": "^4.22.0"
+        "@tensorflow/tfjs": "^4.22.0",
+        "@tensorflow/tfjs-node": "^4.22.0"
     }
 }
