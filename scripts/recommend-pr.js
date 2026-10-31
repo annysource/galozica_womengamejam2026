@@ -71,11 +71,15 @@ async function githubApiPages(path) {
 const commits = await githubApiPages(
     `${repositoryApiPath}/pulls/${pullNumber}/commits?per_page=100`
 );
+const changedFiles = await githubApiPages(
+    `${repositoryApiPath}/pulls/${pullNumber}/files?per_page=100`
+);
 const context = {
     branch: pullRequest.head.ref,
     title: pullRequest.title,
     description: pullRequest.body ?? '',
-    commitMessages: commits.map(commit => commit.commit.message)
+    commitMessages: commits.map(commit => commit.commit.message),
+    changedFiles: changedFiles.map(file => file.filename)
 };
 
 const [testCases, history] = await Promise.all([
