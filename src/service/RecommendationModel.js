@@ -1,22 +1,33 @@
 const STOP_WORDS = new Set([
     'a', 'ao', 'aos', 'as', 'com', 'da', 'das', 'de', 'do', 'dos', 'e',
     'em', 'na', 'nas', 'no', 'nos', 'o', 'os', 'para', 'por', 'the', 'to',
-    'and', 'or', 'of', 'in', 'on', 'for', 'with', 'is', 'be', 'it'
+    'and', 'or', 'of', 'in', 'on', 'for', 'with', 'is', 'be', 'it',
+    'add', 'added', 'change', 'changes', 'changed', 'fix', 'fixed', 'implement',
+    'improve', 'update', 'updated', 'assets', 'asset', 'scripts', 'script', 'src'
 ]);
 const HASH_BUCKETS = 64;
 
-const tokenize = value => String(value ?? '')
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .match(/[a-z0-9]+/g)
-    ?.filter(token => token.length > 1 && !STOP_WORDS.has(token)) ?? [];
+const tokenize = value => {
+    const text = String(value ?? '');
+    const terms = [
+        ...(text.match(/[A-Za-z0-9]+/g) ?? []).map(term => term.toLowerCase()),
+        ...(text.match(/[A-Z]?[a-z]+|[A-Z]+(?=[A-Z][a-z]|\b)|[0-9]+/g) ?? [])
+            .map(term => term.toLowerCase())
+    ];
+    return terms
+        .join(' ')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .match(/[a-z0-9]+/g)
+        ?.filter(token => token.length > 1 && !STOP_WORDS.has(token)) ?? [];
+};
 
 const contextText = context => [
     context.branch,
     context.title,
     context.description,
-    ...(context.commitMessages ?? [])
+    ...(context.commitMessages ?? []),
+    ...(context.changedFiles ?? [])
 ].filter(Boolean).join(' ');
 
 const testCaseText = testCase => [
@@ -27,6 +38,11 @@ const testCaseText = testCase => [
     ...(testCase.preconditions ?? []),
     ...(testCase.steps ?? []),
     testCase.expectedResult,
+    testCase.gherkin?.feature,
+    testCase.gherkin?.scenario,
+    testCase.gherkin?.given,
+    testCase.gherkin?.when,
+    testCase.gherkin?.then,
     testCase.priority,
     testCase.testType,
     ...(testCase.tags ?? [])
@@ -45,7 +61,8 @@ export function createVocabulary(testCases, history) {
         terms: [...terms].sort(),
         priorities: [...new Set(testCases.map(testCase => testCase.priority))].sort(),
         testTypes: [...new Set(testCases.map(testCase => testCase.testType))].sort(),
-        hashBuckets: HASH_BUCKETS
+        hashBuckets: HASH_BUCKETS,
+        history
     };
 }
 
@@ -155,19 +172,99 @@ export function recommendTestCases(tf, model, context, testCases, vocabulary) {
     );
     const inputTensor = tf.tensor2d(vectors);
     const prediction = model.predict(inputTensor);
-    const scores = prediction.dataSync();
+    const modelScores = prediction.dataSync();
     inputTensor.dispose();
     prediction.dispose();
 
-    const contextTerms = new Set(tokenize(contextText(context)));
-    return testCases.map((testCase, index) => {
-        const matchingTerms = tokenize(testCaseText(testCase))
-            .filter(term => contextTerms.has(term));
-        const reason = matchingTerms.length
-            ? `O contexto do PR coincide com os termos: ${[...new Set(matchingTerms)].slice(0, 5).join(', ')}.`
-            : 'O modelo identificou este caso como relevante com base nos padrões dos históricos de alteração e seleção de testes.';
+    const documents = testCases.map(testCase => new Set(tokenize(testCaseText(testCase))));
+    const documentFrequency = new Map();
+    for (const terms of documents) {
+        for (const term of terms) {
+            documentFrequency.set(term, (documentFrequency.get(term) ?? 0) + 1);
+        }
+    }
 
-        return { ...testCase, score: scores[index], reason };
+    const termWeights = value => {
+        const weights = new Map();
+        for (const term of new Set(tokenize(value))) {
+            if (documentFrequency.has(term)) {
+                weights.set(term, 1 + Math.log(
+                    (testCases.length + 1) / (documentFrequency.get(term) + 1)
+                ));
+            }
+        }
+        return weights;
+    };
+    const contextWeights = termWeights([
+        context.branch,
+        context.title,
+        context.description,
+        ...(context.commitMessages ?? [])
+    ].filter(Boolean).join(' '));
+    const fileWeights = termWeights((context.changedFiles ?? []).join(' '));
+    const hasFileEvidence = fileWeights.size > 0;
+    const historyMatches = vocabulary.history ?? [];
+    const maxModelScore = Math.max(...modelScores);
+    const minModelScore = Math.min(...modelScores);
+    const modelScoreRange = maxModelScore - minModelScore;
+    const normalizedModelScores = modelScores.map(score =>
+        modelScoreRange === 0 ? 0 : (score - minModelScore) / modelScoreRange
+    );
+
+    const weightedOverlap = (weights, terms) => {
+        const totalWeight = [...weights.values()].reduce((total, weight) => total + weight, 0);
+        if (totalWeight === 0) {
+            return 0;
+        }
+        let matchedWeight = 0;
+        for (const [term, weight] of weights) {
+            if (terms.has(term)) {
+                matchedWeight += weight;
+            }
+        }
+        return matchedWeight / totalWeight;
+    };
+
+    return testCases.map((testCase, index) => {
+        const terms = documents[index];
+        const matchingContextTerms = [...contextWeights.keys()].filter(term => terms.has(term));
+        const matchingFileTerms = [...fileWeights.keys()].filter(term => terms.has(term));
+        const contextScore = weightedOverlap(contextWeights, terms);
+        const fileScore = weightedOverlap(fileWeights, terms);
+        let historyScore = 0;
+        let matchingHistory;
+
+        for (const entry of historyMatches) {
+            const similarity = weightedOverlap(contextWeights, new Set(tokenize(contextText(entry))));
+            if (similarity > historyScore && entry.selectedTestCaseIds.includes(testCase.id)) {
+                historyScore = similarity;
+                matchingHistory = entry;
+            }
+        }
+
+        const score = hasFileEvidence
+            ? fileScore * 0.75
+                + contextScore * 0.18
+                + historyScore * 0.05
+                + normalizedModelScores[index] * 0.02
+            : contextScore * 0.82
+                + historyScore * 0.10
+                + normalizedModelScores[index] * 0.08;
+        const reasons = [];
+        if (matchingFileTerms.length > 0) {
+            reasons.push(`arquivos alterados correspondem a ${[...new Set(matchingFileTerms)].slice(0, 5).join(', ')}`);
+        }
+        if (matchingContextTerms.length > 0) {
+            reasons.push(`contexto do PR corresponde a ${[...new Set(matchingContextTerms)].slice(0, 5).join(', ')}`);
+        }
+        if (matchingHistory) {
+            reasons.push(`histórico semelhante: ${matchingHistory.title}`);
+        }
+        const reason = reasons.length > 0
+            ? `Recomendado porque ${reasons.join('; ')}.`
+            : 'Sem correspondência direta com os termos do PR ou arquivos alterados; posição baseada no modelo treinado.';
+
+        return { ...testCase, score, reason };
     }).sort((left, right) => right.score - left.score);
 }
 
