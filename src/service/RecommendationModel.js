@@ -32,7 +32,6 @@ export class RecommendationModel {
 
       this.allTestCases.forEach((tcId, index) => {
         const isSelected = selectedSet.has(tcId);
-        // Gera amostras positivas (1) e negativas (0)
         inputs.push([...inputVector, index]);
         labels.push(isSelected ? 1 : 0);
       });
@@ -41,8 +40,8 @@ export class RecommendationModel {
     const hasPositive = labels.includes(1);
     const hasNegative = labels.includes(0);
 
+    // Fallback de seguranca caso o historico seja pequeno
     if (!hasPositive || !hasNegative) {
-      // Fallback de segurança para não interromper a execução do CI
       inputs.push([...new Array(this.allFiles.length).fill(0), 0]);
       labels.push(hasPositive ? 0 : 1);
     }
